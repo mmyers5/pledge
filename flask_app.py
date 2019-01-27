@@ -1,5 +1,4 @@
 import re
-from collections import Counter
 from flask import Flask, request, render_template
 from topic import jcinkThread
 
