@@ -1,53 +1,16 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-        <title>My scratchboard page</title>
-    </head>
-
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">My nursery</a>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row">
-                For all your egg needs.
-            </div>
-            <div class="row">
-                <form action="." method="POST">
-                    <textarea class="form-control" name="contents" placeholder="Thread num or thread url goes here dawg"></textarea>
-                    <input type="submit" class="btn btn-success" value="Bootey/Boot/Booty">
-                </form>
-            </div>
-            <div class="row">
-                Total post count: {{ total_post_count }}
-            </div>
-            {% for user in users %}
-                    <div class="row">
-                        {{ user }} post count: {{ post_count[user] }}
-                    </div>
-            {% endfor %}
-            <br>
-            <div class="row">
-                Total word count: {{ total_word_count }}
-            </div>
-            {% for user in users %}
-                <div class="row">
-                    {{ user }} word count: {{ word_count[user] }}
-                </div>
-            {% endfor %}
-        </div><!-- /.container -->
-    </body>
-</html>
+<form>
+   <fieldset>
+   <img id="finalegg" src="https://i.imgur.com/gVAi1Rz.png"><!-- this is where the egg could be rendered maybe? Alternatively, just use a dummy image -->
+    <legend>Egg Pattern Generator</legend>
+    <div id="wrapper">
+      <div id="first">
+          <label for="basecolor">Egg Base Color</label><input type="color" id="basecolor" value="#fff6de"><br>
+          <label for="patterncolor">Egg Pattern Color</label><input type="color" id="patterncolor" value="#9ccd83">
+      </div>   
+    </div>
+    <div id="btnsubmit">
+      <input id="submit_pattern" type="submit" value="Randomize Pattern!" class="submit" formaction="pattern.php"> 
+      <input id="submit_update" type="submit" value="Update Colors!" class="submit" formaction="color.php">
+    </div>
+  </fieldset>
+</form>
