@@ -28,16 +28,16 @@
             <div class="row">
                 <form action=".", method="POST">
                     <fieldset>
-                        <img name="finalegg" src={{ egg_image }}>
+                        <img name="egg_image" src={{ egg_image }}>
                         <legend>Egg Pattern Generator</legend>
-                        <textarea class="form-control" name="pattern_file" placeholder="Give me a pattern filename!"></textarea>
+                        <textarea class="form-control" name="pattern_file" placeholder="Give me a pattern filename!">{{ pattern_file }}</textarea>
                         <div id="wrapper">
                             <div id="first">
                                 <label for="basecolor">Egg Base Color</label>
                                 <input type="color" name="base_hex" value={{ base_hex }}><br>
                                 <label for="patterncolor">Egg Pattern Color</label>
                                 <input type="color" name="pattern_hex" value={{ pattern_hex }}>
-                            </div>   
+                            </div>
                         </div>
                         <div class="row">
                             <input type="submit" class="btn btn-success" value="Egg Please">
