@@ -1,85 +1,126 @@
 from PIL import Image
 from copy import deepcopy
-
-TEST_EGG_BASE = '/home/y2kekse/images/BaseEgg.png'
-TEST_EGG_PATTERN = '/home/y2kekse/images/Splotch2.png'
-TEST_EGG_LIGHTING = (
-    '/home/y2kekse/images/Base-Eggwith-Shadowand-Highlight.png'
-)
-
-IM_BASE = Image.open(TEST_EGG_BASE)
-IM_PATTERN = Image.open(TEST_EGG_PATTERN)
-IM_LIGHTING = Image.open(TEST_EGG_LIGHTING)
+from random import randint
+import os
 
 color_templates = {
     'base': (254, 206, 36, 255),
     'pattern': (153, 0, 80, 255),
     'highlight': (254, 221, 47, 255),
-    'shadow': (177, 144, 25, 255),
-    'exterior': (255, 255, 255, 0)
-}
-color_codes = {
-    'red': (255, 0, 0, 255),
-    'green': (0, 255, 0, 255),
-    'blue': (0, 0, 255, 255),
-    'highlight': (255, 255, 255, 255),
-    'shadow': (0, 0, 0, 255)
+    'shadow': (177, 144, 25, 255)
 }
 
+def hex_to_rgba(hex, alpha=255):
+    h = hex.strip('#')
+    rgb = [int(h[i:i+2], 16) for i in (0, 2 ,4)]
+    return tuple(rgb + [alpha])
+
 def get_pixel_mask(im, template='pattern'):
-    rgba_im = im.convert('RGBA')
-    width, height = rgba_im.size
+    width, height = im.size
     pixels = []
     for w in range(width):
         for h in range(height):
-            if rgba_im.getpixel((w,h)) == color_templates[template]:
+            if im.getpixel((w,h)) == color_templates[template]:
                 pixels.append((w,h))
     return pixels
 
-def get_image_mask(im, mask, alpha=255):
-    rgba_im = im.convert('RGBA')
-    width, height = rgba_im.size
-    mask_im = Image.new(
-        'RGBA', (width, height),
-        color=(255, 255, 255, 0)
-    )
-    mask_pixels = mask_im.load()
-    for wh in mask:
-        w, h = wh
-        mask_pixels[w, h] = (255, 255, 255, alpha)
-    return mask_im
-
-def change_pixels(im, mask, color):
+def change_pixels(im, pixel_mask, color):
     pixels = im.load()
-    for wh in mask:
-        w, h = wh
-        pixels[w, h] = color_codes[color]
+    for w, h in pixel_mask:
+        pixels[w, h] = color
     return im
 
-def create_base(color):
-    mask = get_pixel_mask(IM_BASE, template='base')
-    im = change_pixels(IM_BASE, mask, color)
-    return im
+def create_image(image_file, color, template='pattern'):
+    template_image = Image.open(image_file)
+    pixel_mask = get_pixel_mask(template_image, template=template)
+    if template != 'base':
+        template_image = Image.new('RGBA', template_image.size, (0,0,0,0))
+    change_pixels(template_image, pixel_mask, color)
+    return template_image
 
-def add_pattern(base, pattern, color, template='pattern', alpha=255):
-    mask = get_pixel_mask(pattern, template=template)
-    im_mask = get_image_mask(pattern, mask, alpha=alpha)
-    base.paste(color_codes[color], (0,0), im_mask)
-    return base
 
-def add_lighting(im):
-    im = add_pattern(
-        im, IM_LIGHTING, 'shadow',
-        template='shadow', alpha=50
-    )
-    im = add_pattern(
-        im, IM_LIGHTING, 'highlight',
-        template='highlight', alpha=50
-    )
-    return im
+class Egg:
+    def __init__(self, base_file):
+        self.base_file = base_file
+        self.raw_base = Image.open(self.base_file)
+        self.image = deepcopy(self.raw_base)
+
+    def set_base(self, color):
+        # never have transparent base, ever.
+        if color[-1] != 255:
+            color = color[:-1] + (255,)
+        self.image = create_image(self.base_file, color, template='base')
+
+    def add_pattern(self, pattern_file, color):
+        pattern = create_image(pattern_file, color, template='pattern')
+        self.image = Image.alpha_composite(self.image, pattern)
+
+    def add_lighting(self, lighting_file):
+        shadow = create_image(
+            lighting_file, (0, 0, 0, 100), template='shadow'
+        )
+        self.image = Image.alpha_composite(self.image, shadow)
+        highlight = create_image(
+            lighting_file, (255, 255, 255, 100), template='highlight'
+        )
+        self.image = Image.alpha_composite(self.image, highlight)
+
+
+class EggGenerator:
+    def __init__(self, images_dir, base_file, lighting_file):
+        self.images_dir = images_dir
+        self.base_file = images_dir + '/' + base_file
+        self.lighting_file = images_dir + '/' + lighting_file
+        self.images = os.listdir(images_dir)
+        self.images.remove(base_file)
+        self.images.remove(lighting_file)
+    
+    def get_random_color(self):
+        return (
+            randint(0,255),
+            randint(0,255),
+            randint(0,255),
+            randint(100,255)    # avoid very transparent patterns
+        )
+
+    def get_random_pattern(self):
+        n_images = len(self.images)
+        r = randint(0, n_images-1)
+        return '{}/{}'.format(self.images_dir, self.images[r])
+
+    def create_random_egg(self, n=1, layers=1, save=False):
+        for e in range(n):
+            egg = Egg(self.base_file)
+            egg.set_base(self.get_random_color())
+            for p in range(layers):
+                egg.add_pattern(
+                    self.get_random_pattern(),
+                    self.get_random_color()
+                )
+            egg.add_lighting(self.lighting_file)
+            if save:
+                self.save_egg(egg, tag='{}_{}'.format(p,e))
+    
+    def save_egg(self, egg, tag='', save_file=None):
+        if save_file is None:
+            posix = int(time.time())
+            save_file = '{}_{}.png'.format(posix, tag)
+        egg.save(save_file)
+
+    def create_specific_egg(self, base_color, pattern_file, pattern_color):
+        egg = Egg(self.base_file)
+        egg.set_base(base_color)
+        egg.add_pattern(pattern_file, pattern_color)
+        egg.add_lighting(self.lighting_file)
+        return egg
 
 if __name__ == '__main__':
-    im = create_base('blue')
-    im = add_pattern(im, deepcopy(IM_PATTERN), 'green')
-    im = add_lighting(im)
-    im.show()
+    egg = Egg('/Users/mmyers/pledge/images/BaseEgg.png')
+    egg.set_base((0, 0, 255, 255))
+    pattern_file = '/Users/mmyers/pledge/images/Splotch2.png'
+    lighting_file = (
+        '/Users/mmyers/pledge/images/Base-Eggwith-Shadowand-Highlight.png'
+    )
+    egg.add_pattern(pattern_file, (0, 255, 0, 255))
+    egg.add_lighting(lighting_file)
+    egg.image.show()
