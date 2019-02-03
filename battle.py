@@ -1,4 +1,24 @@
-"""This is a test battle calculator."""
+"""This is a test battle calculator.
+Presumably attacker, defender, and move are dicts as follows:
+
+    attacker = {
+        'name': 'Slowpoke',
+        'attack': 10,
+        'defense': 10,
+        'special_attack': 10,
+        'special_defense': 10,
+        'speed': 1,
+        'level': 10
+    }
+    
+    move = {
+        'name': Tackle,
+        'power': 35,
+        'attack_type': 'physical',
+        'type': 'Normal'
+    }
+
+"""
 
 def damage(level, power, a_stat, d_stat, modifier):
     # See https://bulbapedia.bulbagarden.net/wiki/Damage
@@ -50,7 +70,12 @@ def get_modifiers(attacker, defender, move, modifiers):
 def get_stat(attacker, defender, move):
     """Given a move, get relevant stats from pokemon."""
     attack_type = move['attack_type']
-    return attacker[attack_type], defender['attack_type']
+    if attack_type == 'physical':
+        return attacker['attack'], defender['defense']
+    elif attack_type == 'special':
+        return attacker['special_attack'], defender['special_defense']
+    else:
+        raise Exception("Did not recognize attack type.")
 
 def battle(attacker, defender, move, **modifiers):
     """Run a battle."""
