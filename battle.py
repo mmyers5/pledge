@@ -15,7 +15,7 @@ def damage(level, power, a_stat, d_stat, modifier):
             / 50
         )
         + 2
-    )
+    ) * modifier
 
 
 def resolve_weather(*args):
