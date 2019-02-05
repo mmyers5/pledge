@@ -1,11 +1,26 @@
 import re
 import time
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for
 from topic import jcinkThread
 from egg_maker import EggGenerator, hex_to_rgba
 
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
+
 app = Flask(__name__)
 app.config['DEBUG'] = True
+
+SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}'.format(
+    username='y2kekse',
+    password='100%Link',
+    hostname='y2kekse.mysql.pythonanywhere-services.com',
+    databasename='y2kekse$modlog',
+)
+app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
+app.config["SQLALCHEMY_POOL_RECYCLE"] = 299
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
+db = SQLAlchemy(app)
 
 IMAGE_DIR = '/images'
 BASE_FILE = '/home/y2kekse/images/BaseEgg.png'
@@ -74,3 +89,60 @@ def egg():
         pattern_hex=pattern_hex,
         egg_image='/images/{}.png'.format(posix)
     )
+
+class ModLog(db.Model):
+
+    __tablename__ = "mod_log"
+
+    id = db.Column(db.Integer, primary_key=True)
+    created = db.Column(db.DateTime(timezone=True), default=datetime.now)
+    mod_name = db.Column(db.String(4096))
+    action_name = db.Column(db.String(4096))
+    member_name = db.Column(db.String(4096))
+    notes = db.Column(db.String(4096))
+    url = db.Column(db.String(4096))
+
+class Actions(db.Model):
+
+    __tablename__ = "actions"
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(4096))
+
+@app.route('/mod_log/', methods=['GET', 'POST'])
+def mod_log():
+    if request.method == 'GET':
+        return render_template(
+            'mod_log.html',
+            logs=ModLog.query.all(),
+            actions=Actions.query.all(),
+            timestamp=datetime.now()
+        )
+    insert_into_table(ModLog, request.form)
+    return redirect(url_for('mod_log'))
+
+@app.route('/log_actions/', methods=['GET', 'POST'])
+def log_actions():
+    if request.method == 'GET':
+        return render_template(
+            'log_actions.html',
+            actions=Actions.query.all(),
+            timestamp=datetime.now()
+        )
+    row = Actions(name=request.form['name'])
+    db.session.add(row)
+    db.session.commit()
+    return redirect(url_for('log_actions'))
+
+
+def insert_into_table(table, form):
+        row = table(
+            mod_name=form['mod_name'],
+            member_name=form['member_name'],
+            action_name=form['action_name'],
+            created=datetime.now(),
+            notes=form['notes'],
+            url=form['my_url']
+        )
+        db.session.add(row)
+        db.session.commit()
