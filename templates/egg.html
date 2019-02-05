@@ -17,37 +17,34 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">My nursery</a>
+                    <a class="navbar-brand" href="#">My scratchpad</a>
                 </div>
             </div>
         </nav>
         <div class="container">
             <div class="row">
-                For all your egg needs.
+                Egg generator
             </div>
             <div class="row">
-                <form action="." method="POST">
-                    <textarea class="form-control" name="contents" placeholder="Thread num or thread url goes here dawg"></textarea>
-                    <input type="submit" class="btn btn-success" value="Bootey/Boot/Booty">
+                <form action=".", method="POST">
+                    <fieldset>
+                        <img name="egg_image" src={{ egg_image }}>
+                        <legend>Egg Pattern Generator</legend>
+                        <textarea class="form-control" name="pattern_file" placeholder="Give me a pattern filename or an integer!">{{ pattern_file }}</textarea>
+                        <div id="wrapper">
+                            <div id="first">
+                                <label for="basecolor">Egg Base Color</label>
+                                <input type="color" name="base_hex" value={{ base_hex }}><br>
+                                <label for="patterncolor">Egg Pattern Color</label>
+                                <input type="color" name="pattern_hex" value={{ pattern_hex }}>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" class="btn btn-success" value="Egg Please">
+                        </div>
+                    </fieldset>
                 </form>
-            </div>
-            <div class="row">
-                Total post count: {{ total_post_count }}
-            </div>
-            {% for user in users %}
-                    <div class="row">
-                        {{ user }} post count: {{ post_count[user] }}
-                    </div>
-            {% endfor %}
-            <br>
-            <div class="row">
-                Total word count: {{ total_word_count }}
-            </div>
-            {% for user in users %}
-                <div class="row">
-                    {{ user }} word count: {{ word_count[user] }}
-                </div>
-            {% endfor %}
-        </div><!-- /.container -->
+            <div>
+        </div><!--container-->
     </body>
 </html>
