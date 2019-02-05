@@ -1,8 +1,8 @@
 from PIL import Image
 from copy import deepcopy
 from random import randint
-import os
 import time
+import os
 
 color_templates = {
     'base': (254, 206, 36, 255),
@@ -68,12 +68,13 @@ class Egg:
 
 
 class EggGenerator:
-    def __init__(self, images, base_file, lighting_file):
-        self.base_file =  base_file
-        self.lighting_file = lighting_file
-        self.images = images
-        #self.images.remove(base_file)
-        #self.images.remove(lighting_file)
+    def __init__(self, images_dir, base_file, lighting_file):
+        self.images_dir = images_dir
+        self.base_file =  images_dir+'/'+base_file
+        self.lighting_file = images_dir+'/'+lighting_file
+        self.images = os.listdir(images_dir)
+        self.images.remove(base_file)
+        self.images.remove(lighting_file)
 
     def get_random_color(self):
         return (
@@ -100,6 +101,7 @@ class EggGenerator:
             egg.add_lighting(self.lighting_file)
             if save:
                 self.save_egg(egg, tag='{}_{}'.format(p,e))
+        return egg
 
     def save_egg(self, egg, tag='', save_file=None):
         if save_file is None:
@@ -110,7 +112,7 @@ class EggGenerator:
     def create_specific_egg(self, base_color, pattern_file, pattern_color):
         egg = Egg(self.base_file)
         egg.set_base(base_color)
-        egg.add_pattern(pattern_file, pattern_color)
+        egg.add_pattern(self.images_dir+'/'+pattern_file, pattern_color)
         egg.add_lighting(self.lighting_file)
         return egg
 
