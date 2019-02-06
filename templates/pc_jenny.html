@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <title>My scratchboard page</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">My scratchpad</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <code>
+                    <style type="text/css">
+                        table.pctable {border-collapse: separate; border-radius:12px; -moz-border-radius:12px;width:262px; text-align:center; background-color:#bbb;border-spacing:6px;table-layout:fixed;}
+                        .pctable td, .pctable th {font-size:12px; height:25px;background-color:#fff;border-radius:12px; -moz-border-radius:12px;border-collapse: separate; color:#000;}
+                        .pcname {overflow:hidden;word-break:normal;text-align:center;letter-spacing:2px;font-size:16px !important;height:25px!important;font-weight:bold;}
+                        .pciconbox {width:100px !important;border-radius:50% !important; height:20px !important;}
+                        .pcicondiv {display: flex; align-items: center; justify-content: center;}
+                        .pciconlink {position:absolute;display:block;}
+                        .pcball {position:absolute;margin-top:35px;margin-left:7px;background-color:#fff;border: solid #bbb 3px;border-radius:50%; display: flex; align-items: center; justify-content: center;}
+                        .pcitem {position:absolute;margin-top:35px;margin-left:82px;background-color:#fff;border: solid #bbb 3px;border-radius:50%; display: flex; align-items: center; justify-content: center;}
+                        .pcmove1 {border-bottom-left-radius:8px !important; border-bottom-right-radius:0px !important;border-top-left-radius:50px!important;border-top-right-radius:8px!important;}
+                        .pcmove3 {border-bottom-left-radius:50px !important; border-bottom-right-radius:8px !important;border-top-left-radius:8px!important;border-top-right-radius:0px!important;}
+                        .pcmove4 {border-bottom-left-radius:8px !important; border-bottom-right-radius:50px !important;border-top-left-radius:0px!important;border-top-right-radius:8px!important;}
+                        .pcmove2 {border-bottom-left-radius:0px !important; border-bottom-right-radius:8px !important;border-top-left-radius:8px!important;border-top-right-radius:50px!important;}
+                        .pctable .pcdesc {min-height:114px;max-height:114px!important;padding:5px;overflow:hidden; }
+                        .pccell {line-height:20px;}
+                        h1 {font-size:18; font-weight:bold; letter-spacing:5px;}
+                    </style>
+                    <table style="border-collapse:separate;border-spacing:10px;" align="center">
+                        <tr>
+                            <td>
+                                <table class="pctable">
+                                    <tr>
+                                        <th class="pcname" colspan="2">
+                                            {{ nickname }} -
+                                            <span style="font-family: Tahoma;font-weight:bold;">{{ girlboy }}</span>
+                                            <a href="{{ specie_link }}" style="color:#000;">
+                                                - {{ specie }}
+                                            </a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="pciconbox" rowspan="4">
+                                            <div class="pcicondiv">
+                                                <img style="display:block;position:absolute;max-width:125px;height:auto;max-height:125px; margin-left:0px;" src="{{ icon_img }}">
+                                            </div>
+                                            <div class="pcball">
+                                                <img style="display:block" src="{{ ball_img }}" title="{{ ball }}">
+                                            </div>
+                                            <div class="pcitem" style="{{ no_item }};">
+                                                <img style="display:block" src="{{ item_img }}" title="{{ item }}">
+                                            </div>
+                                        </td>
+                                        <td class="pccell">{{ type }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pccell">{{ level }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pccell">{{ link }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pccell" bgcolor="#ff0000">
+                                            <a href="{{ ability_link }}" style="color:#000;">
+                                                {{ ability }}
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pcmove1" style="background-color:{{ move1_bkg_color }};color:#000;">
+                                            <a href="{{ move1_link }}" style="color:{{ move1_color }};">
+                                                {{ move1 }}
+                                            </a>
+                                        </td>
+                                        <td class="pcmove2" style="background-color:{{ move2_bkg_color }};color:#000">
+                                            <a href="{{ move2_link }}" style="color:{{ move2_color }};">
+                                                {{ move2 }}
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pcmove3" style="background-color:{{ move3_bkg_color }};color:#000;">
+                                            <a href="{{ move3_link }}" style="color:{{ move3_color }};">
+                                                {{ move3 }}
+                                            </a>
+                                        </td>
+                                        <td class="pcmove4" style="background-color:{{ move4_bkg_color }};color:#000">
+                                            <a href="{{ move4_link }}" style="color:{{ move4_color }};">
+                                                {{ move4 }}
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><div class="pcdesc">{{ description }}</div></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </code>
+            </div>
+            <div class="row">
+                <form action="." method="POST">
+                    <input type="text" name="specie", placeholder="Specie">
+                    <input type="text" name="girlboy", placeholder="Gender??">
+                    <input type="text" name="nickname", placeholder="Nickname"><br>
+                    <select name="ball">
+                        {% for ball in balls %}
+                            <option value="{{ ball }}">{{ ball }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="item">
+                        {% for item in items %}
+                            <option value="{{ item }}">{{ item }}</option>
+                        {% endfor %}
+                    </select><br>
+                    <input type="text" name="type", placeholder="Type"><br>
+                    <input type="text" name="level", placeholder="Level"><br>
+                    <input type="text" name="link", placeholder="Link"><br>
+                    <input type="text" name="ability", placeholder="Ability"><br>
+                    <input type="text" name="move1", placeholder="Move 1">
+                    <select name="move1_bkg_color">
+                        {% for move_type in move_types %}
+                            <option value="{{ move_type }}">{{ move_type }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="text" name="move2", placeholder="Move 2">
+                    <select name="move2_bkg_color">
+                        {% for move_type in move_types %}
+                            <option value="{{ move_type }}">{{ move_type }}</option>
+                        {% endfor %}
+                    </select><br>
+                    <input type="text" name="move3", placeholder="Move 3">
+                    <select name="move3_bkg_color">
+                        {% for move_type in move_types %}
+                            <option value="{{ move_type }}">{{ move_type }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="text" name="move4", placeholder="Move 4">
+                    <select name="move4_bkg_color">
+                        {% for move_type in move_types %}
+                            <option value="{{ move_type }}">{{ move_type }}</option>
+                        {% endfor %}
+                    </select><br>
+                    <textarea class="form-control" name="description" placeholder="Description"></textarea>
+                    <input type="submit" class="btn btn-success" value="Submit">
+                </form>
+            </div>
+        </div><!-- /.container -->
+    </body>
+</html>

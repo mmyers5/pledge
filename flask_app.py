@@ -146,3 +146,19 @@ def insert_into_table(table, form):
         )
         db.session.add(row)
         db.session.commit()
+
+@app.route('/pc_jenny/', methods=['GET', 'POST'])
+def pc_jenny_endpoint():
+    template_params = pc_jenny.defaults()
+    if request.method == 'GET':
+        return render_template(
+            'pc_jenny.html',
+            **template_params
+        )
+    template_params = pc_jenny.parse_args(
+        request.form, pc_jenny.defaults()
+    )
+    return render_template(
+        'pc_jenny.html',
+        **template_params
+    )
