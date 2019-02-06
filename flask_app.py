@@ -3,6 +3,7 @@ import time
 from flask import Flask, request, render_template
 from topic import jcinkThread
 from egg_maker import EggGenerator, hex_to_rgba
+import pc_jenny
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -74,3 +75,14 @@ def egg():
         pattern_hex=pattern_hex,
         egg_image='/images/{}.png'.format(posix)
     )
+
+TEMPLATE_PARAMS = pc_jenny.defaults()
+@app.route('/pc_jenny/', methods=['GET', 'POST'])
+def pc_jenny_endpoint():
+    if request.method == 'GET':
+        return render_template(
+            'pc_jenny.html',
+            **TEMPLATE_PARAMS
+        )
+    TEMPLATE_PARAMS = pc_jenny.parse_args(request.form, TEMPLATE_PARAMS)
+    return redirect(url_for('pc_jenny'))
