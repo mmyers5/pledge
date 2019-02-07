@@ -23,17 +23,15 @@
         </nav>
         <div class="container">
             <div class="row">
-                {{ created_pc | safe }}
-            </div>
-            <div class="row">
                 <form action="." method="POST">
-                    <input type="text" name="specie", placeholder="Specie" value="{{ pc.specie }}">
+                    <input type="text" name="specie" placeholder="Specie" value="{{ pc.specie }}">
                     <select name="gender">
                         {% for gender in genders %}
                             <option values="{{ gender }}">{{ gender }}</option>
                         {% endfor %}
                     </select>
-                    <input type="text" name="nickname", placeholder="Nickname" value="{{ pc.nickname }}"><br>
+                    <input type="text" name="nickname" placeholder="Nickname" value="{{ pc.nickname }}">
+                    <input type="text" name="pcname_size" placeholder="Font Size"><br>
                     <select name="shiny">
                         <option value="False">Not Shiny</option>
                         <option value="True">Shiny</option>
@@ -78,15 +76,16 @@
                     </select><br>
                     <textarea class="form-control" name="description" placeholder="Description" value="{{ pc.description }}"></textarea>
                     <input type="submit" class="btn btn-success" value="Submit"><br>
-                    <input type="radio" name="submission" value="modify" checked>Modify Pokémon
-                    <input type="radio" name="submission" value="add">Add Pokémon
                 </form>
             </div>
             <div class="row">
-                <code>
-                    {{ created_pc }}
-                </code>
+                {{ created_pc | safe }}
             </div>
+            <div class="row" style="overflow:auto;height:150px;line-height:3em;padding:5px;">
+                <pre>
+                    {{ created_pc }}
+                </pre>
+            </div><br>
         </div><!-- /.container -->
     </body>
 </html>

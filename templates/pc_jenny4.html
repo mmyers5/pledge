@@ -133,6 +133,114 @@
                                 <textarea class="form-control" name="description_1" placeholder="Description" value="{{ pc[1].description }}"></textarea>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="specie_2", placeholder="Specie" value="{{ pc[2].specie }}">
+                                <select name="gender_2">
+                                    {% for gender in genders %}
+                                        <option values="{{ gender }}">{{ gender }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_2", placeholder="Nickname" value="{{ pc[2].nickname }}">
+                                <input type="text" name="pcname_size_2" placeholder="Font Size"><br>
+                                <select name="shiny_2">
+                                    <option value="False">Not Shiny</option>
+                                    <option value="True">Shiny</option>
+                                </select>
+                                <select name="ball_2">
+                                    {% for ball in balls %}
+                                        <option value="{{ ball }}">{{ ball }}</option>
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_2">
+                                    {% for held_item in held_items %}
+                                        <option value="{{ held_item }}">{{ held_item }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_2", placeholder="Type1/Type2" value="{{ pc[2].type }}"><br>
+                                <input type="text" name="level_2", placeholder="Level" value="{{ pc[2].level }}"><br>
+                                <input type="text" name="link_2", placeholder="Link" value="{{ pc[2].link }}"><br>
+                                <input type="text" name="ability_2", placeholder="Ability" value="{{ pc[2].ability }}"><br>
+                                <input type="text" name="move1_2", placeholder="Move 1" value="{{ pc[2].move1 }}">
+                                <select name="move1_type_2">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_2", placeholder="Move 2" value="{{ pc[2].move2 }}">
+                                <select name="move2_type_2">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_2", placeholder="Move 3" value="{{ pc[2].move3 }}">
+                                <select name="move3_type_2">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_2", placeholder="Move 4" value="{{ pc[2].move4 }}">
+                                <select name="move4_type_2">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_2" placeholder="Description" value="{{ pc[2].description }}"></textarea>
+                            </td>
+                            <td>
+                                <input type="text" name="specie_3", placeholder="Specie" value="{{ pc[3].specie }}">
+                                <select name="gender_3">
+                                    {% for gender in genders %}
+                                        <option values="{{ gender }}">{{ gender }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_3", placeholder="Nickname" value="{{ pc[3].nickname }}">
+                                <input type="text" name="pcname_size_3" placeholder="Font Size"><br>
+                                <select name="shiny_3">
+                                    <option value="False">Not Shiny</option>
+                                    <option value="True">Shiny</option>
+                                </select>
+                                <select name="ball_3">
+                                    {% for ball in balls %}
+                                        <option value="{{ ball }}">{{ ball }}</option>
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_3">
+                                    {% for held_item in held_items %}
+                                        <option value="{{ held_item }}">{{ held_item }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_3", placeholder="Type1/Type2" value="{{ pc[3].type }}"><br>
+                                <input type="text" name="level_3", placeholder="Level" value="{{ pc[3].level }}"><br>
+                                <input type="text" name="link_3", placeholder="Link" value="{{ pc[3].link }}"><br>
+                                <input type="text" name="ability_3", placeholder="Ability" value="{{ pc[3].ability }}"><br>
+                                <input type="text" name="move1_3", placeholder="Move 1" value="{{ pc[3].move1 }}">
+                                <select name="move1_type_3">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_3", placeholder="Move 2" value="{{ pc[3].move2 }}">
+                                <select name="move2_type_3">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_3", placeholder="Move 3" value="{{ pc[3].move3 }}">
+                                <select name="move3_type_3">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_3", placeholder="Move 4" value="{{ pc[3].move4 }}">
+                                <select name="move4_type_3">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_3" placeholder="Description" value="{{ pc[3].description }}"></textarea>
+                            </td>
+                        </tr>
                     </table><br>
                     <input type="submit" class="btn btn-success" value="Submit"><br>
                 </form>

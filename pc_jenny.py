@@ -1,13 +1,16 @@
 from pc_jenny_templates import genders, move_types, balls, held_items
 from pc_jenny_templates import preamble, pc_table
 import pc_jenny_templates
+import re
 
 def create_pcs(pcs):
     n_pcs = len(pcs)
     tables = {}
     for t in range(n_pcs):
         t_name = 'table_{}'.format(t+1)
+        print(pcs[t].__dict__)
         tables[t_name] = pc_table().format(**pcs[t].__dict__)
+        print(tables)
     pc_tables = getattr(pc_jenny_templates, t_name)().format(**tables)
     return '\n'.join([preamble(), pc_tables])
 
@@ -16,8 +19,9 @@ def parse_multiple(pc, form):
     for i in range(n):
         suffix = '_{}'.format(i)
         i_form = { 
-            i.strip(suffix): form[i] for i in form if i.endswith(suffix)
+            ''.join(i.split(suffix)[:-1]): form[i] for i in form if i.endswith(suffix)
         }
+        print(i_form)
         pc[i].parse_args(i_form)
         print(pc[i].specie)
     return pc
@@ -28,6 +32,7 @@ class PCPokemon:
         self.set_defaults()
 
     def set_defaults(self):
+        self.pcname_size = '16'
         self.specie = ''
         self.nickname = ''
         self.gender = '⚲',
@@ -71,12 +76,13 @@ class PCPokemon:
         self.shiny = "False"
         self.no_item = 'display:none;'
         self.no_ball = 'display:none;'
+        self.type_print = ''
 
     def set_specie(self, specie):
-        self.specie = specie
+        self.specie = specie.strip('-f').strip('-m').capitalize()
         self.specie_link = (
             'https://bulbapedia.bulbagarden.net/wiki/{}_(Pok%C3%A9mon)'.format(
-                specie.capitalize()
+                self.specie
             )
         )
         if self.shiny == "True":
@@ -105,10 +111,11 @@ class PCPokemon:
             return
         if '/' in type:
             types = [':{}:'.format(i) for i in type.lower().strip().split('/')]
-            type = ' / '.join(types)
+            type_print = ' / '.join(types)
         else:
-            type = ':{}:'.format(type.lower().strip())
+            type_print = ':{}:'.format(type.lower().strip())
         self.type = type
+        self.type_print = type_print
 
     def set_ability(self, ability):
         self.ability = ability
@@ -167,6 +174,11 @@ class PCPokemon:
             self.nickname = form['nickname']
         if 'type' in changes:
             self.set_type(form['type'])
+        if 'pcname_size' in changes:
+            if form['pcname_size']=='':
+                pass
+            else:
+                self.pcname_size = form['pcname_size']
         if 'level' in changes:
             self.level = form['level']
         if 'link' in changes:
@@ -191,3 +203,5 @@ class PCPokemon:
             self.no_ball = 'display:none;'
         else:
             self.no_ball = ''
+
+        self.type = re.sub(':+', ':', self.type) 

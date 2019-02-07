@@ -183,7 +183,8 @@ def pc_jenny1():
 
 @app.route('/pc_jenny2/', methods=['GET', 'POST'])
 def pc_jenny2():
-    pc = [pc_jenny.PCPokemon() for i in range(2)]
+    n=2
+    pc = [pc_jenny.PCPokemon() for i in range(n)]
     created_pc = pc_jenny.create_pcs(pc)
     if request.method == 'GET':
         return render_template(
@@ -206,3 +207,112 @@ def pc_jenny2():
         created_pc=created_pc,
         pc=pc
     )
+
+@app.route('/pc_jenny3/', methods=['GET', 'POST'])
+def pc_jenny3():
+    n=3
+    pc = [pc_jenny.PCPokemon() for i in range(n)]
+    created_pc = pc_jenny.create_pcs(pc)
+    if request.method == 'GET':
+        return render_template(
+            'pc_jenny3.html',
+            balls=balls,
+            held_items=held_items,
+            genders=genders,
+            move_types=move_types,
+            created_pc=created_pc,
+            pc=pc
+        )
+    pc = pc_jenny.parse_multiple(pc, request.form)
+    created_pc = pc_jenny.create_pcs(pc)
+    return render_template(
+        'pc_jenny3.html',
+        balls=balls,
+        held_items=held_items,
+        genders=genders,
+        move_types=move_types,
+        created_pc=created_pc,
+        pc=pc
+    )
+
+@app.route('/pc_jenny4/', methods=['GET', 'POST'])
+def pc_jenny4():
+    n=4
+    pc = [pc_jenny.PCPokemon() for i in range(n)]
+    created_pc = pc_jenny.create_pcs(pc)
+    if request.method == 'GET':
+        return render_template(
+            'pc_jenny4.html',
+            balls=balls,
+            held_items=held_items,
+            genders=genders,
+            move_types=move_types,
+            created_pc=created_pc,
+            pc=pc
+        )
+    pc = pc_jenny.parse_multiple(pc, request.form)
+    created_pc = pc_jenny.create_pcs(pc)
+    return render_template(
+        'pc_jenny4.html',
+        balls=balls,
+        held_items=held_items,
+        genders=genders,
+        move_types=move_types,
+        created_pc=created_pc,
+        pc=pc
+    )
+
+@app.route('/pc_jenny5/', methods=['GET', 'POST'])
+def pc_jenny5():
+    n=5
+    pc = [pc_jenny.PCPokemon() for i in range(n)]
+    created_pc = pc_jenny.create_pcs(pc)
+    if request.method == 'GET':
+        return render_template(
+            'pc_jenny5.html',
+            balls=balls,
+            held_items=held_items,
+            genders=genders,
+            move_types=move_types,
+            created_pc=created_pc,
+            pc=pc
+        )
+    pc = pc_jenny.parse_multiple(pc, request.form)
+    created_pc = pc_jenny.create_pcs(pc)
+    return render_template(
+        'pc_jenny5.html',
+        balls=balls,
+        held_items=held_items,
+        genders=genders,
+        move_types=move_types,
+        created_pc=created_pc,
+        pc=pc
+    )
+
+@app.route('/pc_jenny6/', methods=['GET', 'POST'])
+def pc_jenny6():
+    n=6
+    pc = [pc_jenny.PCPokemon() for i in range(n)]
+    created_pc = pc_jenny.create_pcs(pc)
+    if request.method == 'GET':
+        return render_template(
+            'pc_jenny6.html',
+            balls=balls,
+            held_items=held_items,
+            genders=genders,
+            move_types=move_types,
+            created_pc=created_pc,
+            pc=pc
+        )
+    pc = pc_jenny.parse_multiple(pc, request.form)
+    created_pc = pc_jenny.create_pcs(pc)
+    return render_template(
+        'pc_jenny6.html',
+        balls=balls,
+        held_items=held_items,
+        genders=genders,
+        move_types=move_types,
+        created_pc=created_pc,
+        pc=pc
+    )
+

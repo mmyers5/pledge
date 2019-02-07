@@ -1,0 +1,313 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <title>My scratchboard page</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">My scratchpad</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <form action="." method="POST">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="specie_0", placeholder="Specie" value="{{ pc[0].specie }}">
+                                <select name="gender_0">
+                                    {% for gender in genders %}
+                                        <option values="{{ gender }}">{{ gender }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_0", placeholder="Nickname" value="{{ pc[0].nickname }}">
+                                <input type="text" name="pcname_size_0" placeholder="Font Size"><br>
+                                <select name="shiny_0">
+                                    <option value="False">Not Shiny</option>
+                                    <option value="True">Shiny</option>
+                                </select>
+                                <select name="ball_0">
+                                    {% for ball in balls %}
+                                        <option value="{{ ball }}">{{ ball }}</option>
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_0">
+                                    {% for held_item in held_items %}
+                                        <option value="{{ held_item }}">{{ held_item }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_0", placeholder="Type1/Type2" value="{{ pc[0].type }}"><br>
+                                <input type="text" name="level_0", placeholder="Level" value="{{ pc[0].level }}"><br>
+                                <input type="text" name="link_0", placeholder="Link" value="{{ pc[0].link }}"><br>
+                                <input type="text" name="ability_0", placeholder="Ability" value="{{ pc[0].ability }}"><br>
+                                <input type="text" name="move1_0", placeholder="Move 1" value="{{ pc[0].move1 }}">
+                                <select name="move1_type_0">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_0", placeholder="Move 2" value="{{ pc[0].move2 }}">
+                                <select name="move2_type_0">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_0", placeholder="Move 3" value="{{ pc[0].move3 }}">
+                                <select name="move3_type_0">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_0", placeholder="Move 4" value="{{ pc[0].move4 }}">
+                                <select name="move4_type_0">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_0" placeholder="Description" value="{{ pc[0].description }}"></textarea>
+                            </td>
+                            <td>
+                                <input type="text" name="specie_1", placeholder="Specie" value="{{ pc[1].specie }}">
+                                <select name="gender_1">
+                                    {% for gender in genders %}
+                                        <option values="{{ gender }}">{{ gender }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_1", placeholder="Nickname" value="{{ pc[1].nickname }}">
+                                <input type="text" name="pcname_size_1" placeholder="Font Size"><br>
+                                <select name="shiny_1">
+                                    <option value="False">Not Shiny</option>
+                                    <option value="True">Shiny</option>
+                                </select>
+                                <select name="ball_1">
+                                    {% for ball in balls %}
+                                        <option value="{{ ball }}">{{ ball }}</option>
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_1">
+                                    {% for held_item in held_items %}
+                                        <option value="{{ held_item }}">{{ held_item }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_1", placeholder="Type1/Type2" value="{{ pc[1].type }}"><br>
+                                <input type="text" name="level_1", placeholder="Level" value="{{ pc[1].level }}"><br>
+                                <input type="text" name="link_1", placeholder="Link" value="{{ pc[1].link }}"><br>
+                                <input type="text" name="ability_1", placeholder="Ability" value="{{ pc[1].ability }}"><br>
+                                <input type="text" name="move1_1", placeholder="Move 1" value="{{ pc[1].move1 }}">
+                                <select name="move1_type_1">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_1", placeholder="Move 2" value="{{ pc[1].move2 }}">
+                                <select name="move2_type_1">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_1", placeholder="Move 3" value="{{ pc[1].move3 }}">
+                                <select name="move3_type_1">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_1", placeholder="Move 4" value="{{ pc[1].move4 }}">
+                                <select name="move4_type_1">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_1" placeholder="Description" value="{{ pc[1].description }}"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="specie_2", placeholder="Specie" value="{{ pc[2].specie }}">
+                                <select name="gender_2">
+                                    {% for gender in genders %}
+                                        <option values="{{ gender }}">{{ gender }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_2", placeholder="Nickname" value="{{ pc[2].nickname }}">
+                                <input type="text" name="pcname_size_2" placeholder="Font Size"><br>
+                                <select name="shiny_2">
+                                    <option value="False">Not Shiny</option>
+                                    <option value="True">Shiny</option>
+                                </select>
+                                <select name="ball_2">
+                                    {% for ball in balls %}
+                                        <option value="{{ ball }}">{{ ball }}</option>
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_2">
+                                    {% for held_item in held_items %}
+                                        <option value="{{ held_item }}">{{ held_item }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_2", placeholder="Type1/Type2" value="{{ pc[2].type }}"><br>
+                                <input type="text" name="level_2", placeholder="Level" value="{{ pc[2].level }}"><br>
+                                <input type="text" name="link_2", placeholder="Link" value="{{ pc[2].link }}"><br>
+                                <input type="text" name="ability_2", placeholder="Ability" value="{{ pc[2].ability }}"><br>
+                                <input type="text" name="move1_2", placeholder="Move 1" value="{{ pc[2].move1 }}">
+                                <select name="move1_type_2">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_2", placeholder="Move 2" value="{{ pc[2].move2 }}">
+                                <select name="move2_type_2">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_2", placeholder="Move 3" value="{{ pc[2].move3 }}">
+                                <select name="move3_type_2">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_2", placeholder="Move 4" value="{{ pc[2].move4 }}">
+                                <select name="move4_type_2">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_2" placeholder="Description" value="{{ pc[2].description }}"></textarea>
+                            </td>
+                            <td>
+                                <input type="text" name="specie_3", placeholder="Specie" value="{{ pc[3].specie }}">
+                                <select name="gender_3">
+                                    {% for gender in genders %}
+                                        <option values="{{ gender }}">{{ gender }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_3", placeholder="Nickname" value="{{ pc[3].nickname }}">
+                                <input type="text" name="pcname_size_3" placeholder="Font Size"><br>
+                                <select name="shiny_3">
+                                    <option value="False">Not Shiny</option>
+                                    <option value="True">Shiny</option>
+                                </select>
+                                <select name="ball_3">
+                                    {% for ball in balls %}
+                                        <option value="{{ ball }}">{{ ball }}</option>
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_3">
+                                    {% for held_item in held_items %}
+                                        <option value="{{ held_item }}">{{ held_item }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_3", placeholder="Type1/Type2" value="{{ pc[3].type }}"><br>
+                                <input type="text" name="level_3", placeholder="Level" value="{{ pc[3].level }}"><br>
+                                <input type="text" name="link_3", placeholder="Link" value="{{ pc[3].link }}"><br>
+                                <input type="text" name="ability_3", placeholder="Ability" value="{{ pc[3].ability }}"><br>
+                                <input type="text" name="move1_3", placeholder="Move 1" value="{{ pc[3].move1 }}">
+                                <select name="move1_type_3">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_3", placeholder="Move 2" value="{{ pc[3].move2 }}">
+                                <select name="move2_type_3">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_3", placeholder="Move 3" value="{{ pc[3].move3 }}">
+                                <select name="move3_type_3">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_3", placeholder="Move 4" value="{{ pc[3].move4 }}">
+                                <select name="move4_type_3">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_3" placeholder="Description" value="{{ pc[3].description }}"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="specie_4", placeholder="Specie" value="{{ pc[4].specie }}">
+                                <select name="gender_4">
+                                    {% for gender in genders %}
+                                        <option values="{{ gender }}">{{ gender }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_4", placeholder="Nickname" value="{{ pc[4].nickname }}">
+                                <input type="text" name="pcname_size_4" placeholder="Font Size"><br>
+                                <select name="shiny_4">
+                                    <option value="False">Not Shiny</option>
+                                    <option value="True">Shiny</option>
+                                </select>
+                                <select name="ball_4">
+                                    {% for ball in balls %}
+                                        <option value="{{ ball }}">{{ ball }}</option>
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_4">
+                                    {% for held_item in held_items %}
+                                        <option value="{{ held_item }}">{{ held_item }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_4", placeholder="Type1/Type2" value="{{ pc[4].type }}"><br>
+                                <input type="text" name="level_4", placeholder="Level" value="{{ pc[4].level }}"><br>
+                                <input type="text" name="link_4", placeholder="Link" value="{{ pc[4].link }}"><br>
+                                <input type="text" name="ability_4", placeholder="Ability" value="{{ pc[4].ability }}"><br>
+                                <input type="text" name="move1_4", placeholder="Move 1" value="{{ pc[4].move1 }}">
+                                <select name="move1_type_4">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_4", placeholder="Move 2" value="{{ pc[4].move2 }}">
+                                <select name="move2_type_4">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_4", placeholder="Move 3" value="{{ pc[4].move3 }}">
+                                <select name="move3_type_4">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_4", placeholder="Move 4" value="{{ pc[4].move4 }}">
+                                <select name="move4_type_4">
+                                    {% for move_type in move_types %}
+                                        <option value="{{ move_type }}">{{ move_type }}</option>
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_4" placeholder="Description" value="{{ pc[4].description }}"></textarea>
+                            </td>
+                        </tr>
+                    </table><br>
+                    <input type="submit" class="btn btn-success" value="Submit"><br>
+                </form>
+            </div>
+            <div class="row">
+                {{ created_pc | safe }}
+            </div>
+            <div class="row" style="overflow:auto;height:150px;line-height:3em;padding:5px;">
+                <pre>
+                    {{ created_pc }}
+                </pre>
+            </div>
+        </div><!-- /.container -->
+    </body>
+</html>
