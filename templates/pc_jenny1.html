@@ -23,17 +23,17 @@
         </nav>
         <div class="container">
             <div class="row">
-                {{ created_pcs | safe }}
+                {{ created_pc | safe }}
             </div>
             <div class="row">
-                <form action="{{ url_for('pc_jenny_endpoint') }}" method="POST">
-                    <input type="text" name="specie", placeholder="Specie" value="{{ pcs[-1].specie }}">
+                <form action="." method="POST">
+                    <input type="text" name="specie", placeholder="Specie" value="{{ pc.specie }}">
                     <select name="gender">
                         {% for gender in genders %}
                             <option values="{{ gender }}">{{ gender }}</option>
                         {% endfor %}
                     </select>
-                    <input type="text" name="nickname", placeholder="Nickname" value="{{ pcs[-1].nickname }}"><br>
+                    <input type="text" name="nickname", placeholder="Nickname" value="{{ pc.nickname }}"><br>
                     <select name="shiny">
                         <option value="False">Not Shiny</option>
                         <option value="True">Shiny</option>
@@ -48,35 +48,35 @@
                             <option value="{{ held_item }}">{{ held_item }}</option>
                         {% endfor %}
                     </select><br>
-                    <input type="text" name="type", placeholder="Type1/Type2" value="{{ pcs[-1].type }}"><br>
-                    <input type="text" name="level", placeholder="Level" value="{{ pcs[-1].level }}"><br>
-                    <input type="text" name="link", placeholder="Link" value="{{ pcs[-1].link }}"><br>
-                    <input type="text" name="ability", placeholder="Ability" value="{{ pcs[-1].ability }}"><br>
-                    <input type="text" name="move1", placeholder="Move 1" value="{{ pcs[-1].move1 }}">
+                    <input type="text" name="type", placeholder="Type1/Type2" value="{{ pc.type }}"><br>
+                    <input type="text" name="level", placeholder="Level" value="{{ pc.level }}"><br>
+                    <input type="text" name="link", placeholder="Link" value="{{ pc.link }}"><br>
+                    <input type="text" name="ability", placeholder="Ability" value="{{ pc.ability }}"><br>
+                    <input type="text" name="move1", placeholder="Move 1" value="{{ pc.move1 }}">
                     <select name="move1_type">
                         {% for move_type in move_types %}
                             <option value="{{ move_type }}">{{ move_type }}</option>
                         {% endfor %}
                     </select>
-                    <input type="text" name="move2", placeholder="Move 2" value="{{ pcs[-1].move2 }}">
+                    <input type="text" name="move2", placeholder="Move 2" value="{{ pc.move2 }}">
                     <select name="move2_type">
                         {% for move_type in move_types %}
                             <option value="{{ move_type }}">{{ move_type }}</option>
                         {% endfor %}
                     </select><br>
-                    <input type="text" name="move3", placeholder="Move 3" value="{{ pcs[-1].move3 }}">
+                    <input type="text" name="move3", placeholder="Move 3" value="{{ pc.move3 }}">
                     <select name="move3_type">
                         {% for move_type in move_types %}
                             <option value="{{ move_type }}">{{ move_type }}</option>
                         {% endfor %}
                     </select>
-                    <input type="text" name="move4", placeholder="Move 4" value="{{ pcs[-1].move4 }}">
+                    <input type="text" name="move4", placeholder="Move 4" value="{{ pc.move4 }}">
                     <select name="move4_type">
                         {% for move_type in move_types %}
                             <option value="{{ move_type }}">{{ move_type }}</option>
                         {% endfor %}
                     </select><br>
-                    <textarea class="form-control" name="description" placeholder="Description" value="{{ pcs[-1].description }}"></textarea>
+                    <textarea class="form-control" name="description" placeholder="Description" value="{{ pc.description }}"></textarea>
                     <input type="submit" class="btn btn-success" value="Submit"><br>
                     <input type="radio" name="submission" value="modify" checked>Modify Pokémon
                     <input type="radio" name="submission" value="add">Add Pokémon
@@ -84,7 +84,7 @@
             </div>
             <div class="row">
                 <code>
-                    {{ created_pcs }}
+                    {{ created_pc }}
                 </code>
             </div>
         </div><!-- /.container -->

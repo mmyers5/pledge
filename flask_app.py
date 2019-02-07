@@ -3,12 +3,14 @@ import time
 from flask import Flask, request, render_template, redirect, url_for
 from topic import jcinkThread
 from egg_maker import EggGenerator, hex_to_rgba
+import pc_jenny
+import pc_jenny_templates
 
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 
 SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}'.format(
     username='y2kekse',
@@ -147,18 +149,60 @@ def insert_into_table(table, form):
         db.session.add(row)
         db.session.commit()
 
-@app.route('/pc_jenny/', methods=['GET', 'POST'])
-def pc_jenny_endpoint():
-    template_params = pc_jenny.defaults()
+pcs = [pc_jenny.PCPokemon()]
+balls = pc_jenny_templates.balls()
+held_items = pc_jenny_templates.held_items()
+genders = pc_jenny_templates.genders()
+move_types = pc_jenny_templates.move_types()
+
+@app.route('/pc_jenny1/', methods=['GET', 'POST'])
+def pc_jenny1():
+    pc = pc_jenny.PCPokemon()
+    created_pc = pc_jenny.create_pcs([pc])
     if request.method == 'GET':
         return render_template(
-            'pc_jenny.html',
-            **template_params
+            'pc_jenny1.html',
+            balls=balls,
+            held_items=held_items,
+            genders=genders,
+            move_types=move_types,
+            created_pc=created_pc,
+            pc=pc
         )
-    template_params = pc_jenny.parse_args(
-        request.form, pc_jenny.defaults()
-    )
+    pc.parse_args(request.form) 
+    created_pc = pc_jenny.create_pcs([pc])
     return render_template(
-        'pc_jenny.html',
-        **template_params
+        'pc_jenny1.html',
+        balls=balls,
+        held_items=held_items,
+        genders=genders,
+        move_types=move_types,
+        created_pc=created_pc,
+        pc=pc
+    )
+
+@app.route('/pc_jenny2/', methods=['GET', 'POST'])
+def pc_jenny2():
+    pc = [pc_jenny.PCPokemon() for i in range(2)]
+    created_pc = pc_jenny.create_pcs(pc)
+    if request.method == 'GET':
+        return render_template(
+            'pc_jenny2.html',
+            balls=balls,
+            held_items=held_items,
+            genders=genders,
+            move_types=move_types,
+            created_pc=created_pc,
+            pc=pc
+        )
+    pc = pc_jenny.parse_multiple(pc, request.form)
+    created_pc = pc_jenny.create_pcs(pc)
+    return render_template(
+        'pc_jenny2.html',
+        balls=balls,
+        held_items=held_items,
+        genders=genders,
+        move_types=move_types,
+        created_pc=created_pc,
+        pc=pc
     )
