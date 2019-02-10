@@ -12,7 +12,7 @@ app.config['DEBUG'] = True
 
 SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}'.format(
     username='y2kekse',
-    password='100%Link',
+    password='pledge',
     hostname='y2kekse.mysql.pythonanywhere-services.com',
     databasename='y2kekse$modlog',
 )
