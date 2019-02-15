@@ -1,0 +1,980 @@
+SPECIES,SPECIES,LOCATION,RARITY,CONDITIONS,OTHER LOCATIONS,CAN ALSO BE OBTAINED VIA:
+#000 SWARM,Noibat,HUDOR REEF,1 Very Common,,,
+#000 SWARM,Poliwrath,OKEANOS TOWN,1 Very Common,,,
+#000 SWARM,Turtwig,PULLUS MAZE,1 Very Common,,,
+#000 SWARM,Slakoth,ROUTE 10: LAKE LEBES,1 Very Common,,,
+#000 SWARM,Conkeldurr,ROUTE 6: THE BENDS,1 Very Common,,,
+#000 SWARM,Mankey,UBERRIME CITY,1 Very Common,,,
+#001,Bulbasaur,ROUTE 4: QUOD GALEA,4 Rare [RARE],,,Starter
+#002,Ivysaur,ROUTE 4: QUOD GALEA,4 Rare [RARE],,,Starter
+#003,Venusaur,ROUTE 4: QUOD GALEA,5 Ultra Rare [RARE],,,Starter
+#004,Charmander,MT ADURO,4 Rare [RARE],,,Starter
+#005,Charmeleon,MT ADURO,4 Rare [RARE],,,Starter
+#006,Charizard,MT ADURO,5 Ultra Rare [RARE],,,Starter
+#007,Squirtle,LAKE DUO DULCIS,4 Rare [RARE],,,Starter
+#008,Wartortle,LAKE DUO DULCIS,4 Rare [RARE],,,Starter
+#009,Blastoise,LAKE DUO DULCIS,5 Ultra Rare [RARE],,,Starter
+#010,Caterpie,ROUTE 4: QUOD GALEA,1 Very Common,,ROUTE 10: LAKE LEBES,Starter
+#011,Metapod,ROUTE 4: QUOD GALEA,1 Very Common,,ROUTE 10: LAKE LEBES,Starter
+#012,Butterfree,ROUTE 4: QUOD GALEA,2 Common,,ROUTE 10: LAKE LEBES,Starter
+#013,Weedle,ROUTE 4: QUOD GALEA,1 Very Common,,ROUTE 10: LAKE LEBES,Starter
+#014,Kakuna,ROUTE 4: QUOD GALEA,1 Very Common,,ROUTE 10: LAKE LEBES,Starter
+#015,Beedrill,ROUTE 4: QUOD GALEA,2 Common,,ROUTE 10: LAKE LEBES,Starter
+#016,Pidgey,LAKE DUO DULCIS,1 Very Common,,ROUTE 4: QUOD GALEA,Starter
+#016,Pidgey,ROUTE 4: QUOD GALEA,1 Very Common,,LAKE DUO DULCIS,Starter
+#017,Pidgeotto,LAKE DUO DULCIS,2 Common,,ROUTE 4: QUOD GALEA,Starter
+#017,Pidgeotto,ROUTE 4: QUOD GALEA,2 Common,,LAKE DUO DULCIS,Starter
+#018,Pidgeot,LAKE DUO DULCIS,3 Uncommon,,ROUTE 4: QUOD GALEA,Starter
+#018,Pidgeot,ROUTE 4: QUOD GALEA,3 Uncommon,,LAKE DUO DULCIS,Starter
+#019,Rattata,PISCARI TOWN,2 Common,,,
+#019,Rattata (Alolan),PISCARI TOWN,2 Common,,,
+#020,Raticate,PISCARI TOWN,3 Uncommon,,,
+#020,Raticate (Alolan),PISCARI TOWN,3 Uncommon,,,
+#021,Spearow,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,
+#022,Fearow,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,
+#023,Ekans,VETUS ISLE,2 Common,,,
+#024,Arbok,VETUS ISLE,3 Uncommon,,,
+#025,Pikachu,ROUTE 3: PROCELLA STRAITS,4 Rare,,UBERRIME CITY,Starter
+#025,Pikachu,UBERRIME CITY,2 Common,,ROUTE 3: PROCELLA STRAITS,
+#026,Raichu,ROUTE 3: PROCELLA STRAITS,5 Ultra Rare,,UBERRIME CITY,Starter
+#026,Raichu (Alolan),ROUTE 3: PROCELLA STRAITS,5 Ultra Rare,,UBERRIME CITY,Starter
+#026,Raichu,UBERRIME CITY,3 Uncommon,,ROUTE 3: PROCELLA STRAITS,
+#026,Raichu (Alolan),UBERRIME CITY,3 Uncommon,,ROUTE 3: PROCELLA STRAITS,
+#027,Sandshrew,ROUTE 6: THE BENDS,1 Very Common,,,
+#027,Sandshrew (Alolan),"ROUTE 7: THE 1,000 STEPS",3 Uncommon,,,
+#028,Sandslash,ROUTE 6: THE BENDS,3 Uncommon,,,
+#028,Sandslash (Alolan),"ROUTE 7: THE 1,000 STEPS",4 Rare,,,
+#029,Nidoran♀,VETUS ISLE,1 Very Common,,,Starter
+#030,Nidorina,VETUS ISLE,2 Common,,,Starter
+#031,Nidoqueen,VETUS ISLE,4 Rare,,,Starter
+#032,Nidoran♂,VETUS ISLE,1 Very Common,,,Starter
+#033,Nidorino,VETUS ISLE,2 Common,,,Starter
+#034,Nidoking,VETUS ISLE,4 Rare,,,Starter
+#035,Clefairy,CAECUS TOWN,2 Common,,MITIS COVE,Starter
+#035,Clefairy,MITIS COVE,2 Common,,CAECUS TOWN,Starter
+#036,Clefable,CAECUS TOWN,4 Rare,,MITIS COVE,Starter
+#036,Clefable,MITIS COVE,2 Uncommon,,CAECUS TOWN,Starter
+#037,Vulpix,MT ADURO,3 Uncommon,,,
+#037,Vulpix (Alolan),THE TUNDRA,4 Rare,,,
+#038,Ninetales,MT ADURO,4 Rare,,,
+#038,Ninetales (Alolan),THE TUNDRA,5 Ultra Rare,,,
+#039,Jigglypuff,MITIS COVE,2 Common,,,
+#040,Wigglytuff,MITIS COVE,3 Uncommon,,,
+#041,Zubat,THE PULLUS MAZE,1 Very Common,,,Starter
+#042,Golbat,THE PULLUS MAZE,2 Common,,,Starter
+#043,Oddish,ROUTE 4: QUOD GALEA,3 Uncommon,Sweet Scent,,Starter
+#044,Gloom,ROUTE 4: QUOD GALEA,4 Rare,Sweet Scent,,Starter
+#045,Vileplume,ROUTE 4: QUOD GALEA,4 Rare,Sweet Scent,,Starter
+#046,Paras,ROUTE 10: LAKE LEBES,3 Uncommon,,ROUTE 4: QUOD GALEA,
+#047,Parasect,ROUTE 10: LAKE LEBES,4 Rare,,ROUTE 4: QUOD GALEA,
+#048,Venonat,ROUTE 10: LAKE LEBES,3 Uncommon,,ROUTE 4: QUOD GALEA,
+#049,Venomoth,ROUTE 10: LAKE LEBES,4 Rare,,ROUTE 4: QUOD GALEA,
+#050,Diglett (Alolan),ROUTE 1: THE MILIA,4 Rare,,,
+#050,Diglett,THE PULLUS MAZE,2 Common,,,
+#051,Dugtrio (Alolan),ROUTE 1: THE MILIA,4 Rare,,,
+#051,Dugtrio,THE PULLUS MAZE,3 Uncommon,,,
+#052,Meowth,PISCARI TOWN,2 Common,,,
+#052,Meowth (Alolan),PISCARI TOWN,3 Uncommon,,,
+#053,Persian,PISCARI TOWN,2 Common,,,
+#053,Persian (Alolan),PISCARI TOWN,3 Uncommon,,,
+#054,Psyduck,LAKE DUO DULCIS,2 Common,,,
+#055,Golduck,LAKE DUO DULCIS,3 Uncommon,,,
+#056,Mankey,QUOD VORAGO,1 Very Common,,,
+#057,Primeape,QUOD VORAGO,2 Common,,,
+#058,Growlithe,ROUTE 8: ADURO PASS,3 Uncommon,,,
+#059,Arcanine,ROUTE 8: ADURO PASS,4 Rare,,,
+#060,Poliwag,LAKE DUO DULCIS,1 Very Common,,,Starter
+#061,Poliwhirl,LAKE DUO DULCIS,2 Common,,,Starter
+#062,Poliwrath,LAKE DUO DULCIS,3 Uncommon,,,Starter
+#063,Abra,VETUS ISLE,3 Uncommon,,,Starter
+#064,Kadabra,VETUS ISLE,3 Uncommon,,,Starter
+#065,Alakazam,VETUS ISLE,4 Rare,,,Starter
+#066,Machop,QUOD VORAGO,1 Very Common,,,Starter
+#067,Machoke,QUOD VORAGO,1 Very Common,,,Starter
+#068,Machamp,QUOD VORAGO,2 Common,,,Starter
+#069,Bellsprout,VETUS ISLE,2 Common,,,Starter
+#070,Weepinbell,VETUS ISLE,2 Common,,,Starter
+#071,Victreebel,VETUS ISLE,3 Uncommon,,,Starter
+#072,Tentacool,ROUTE 1: THE MILIA,1 Very Common,,,
+#073,Tentacruel,ROUTE 1: THE MILIA,1 Very Common,,,
+#074,Geodude (Alolan),ROUTE 3: PROCELLA STRAITS,3 Uncommon,,,Starter
+#074,Geodude,ROUTE 6: THE BENDS,1 Very Common,,,Starter
+#075,Graveler (Alolan),ROUTE 3: PROCELLA STRAITS,3 Uncommon,,,Starter
+#075,Graveler,ROUTE 6: THE BENDS,1 Very Common,,,Starter
+#076,Golem (Alolan),ROUTE 3: PROCELLA STRAITS,4 Rare,,,Starter
+#076,Golem,ROUTE 6: THE BENDS,2 Common,,,Starter
+#077,Ponyta,AGRI TOWN,2 Common,,,
+#078,Rapidash,AGRI TOWN,3 Uncommon,,,
+#079,Slowpoke,OKEANOS TOWN,2 Common,,ROUTE 1: THE MILIA,
+#079,Slowpoke,ROUTE 1: THE MILIA,3 Uncommon,,OKEANOS TOWN,
+#080,Slowbro,OKEANOS TOWN,3 Uncommon,,ROUTE 1: THE MILIA,
+#080,Slowbro,ROUTE 1: THE MILIA,4 Rare,,OKEANOS TOWN,
+#081,Magnemite,ROUTE 9: UNA WAY,1 Very Common,,,Starter
+#082,Magneton,ROUTE 9: UNA WAY,2 Common,,,Starter
+#083,Farfetch'd,LAKE DUO DULCIS,4 Rare,,Route 4: Quod Galea,
+#083,Farfetch'd,ROUTE 4: QUOD GALEA,4 Rare,Sweet Scent,Lake Duo Dulcis,
+#084,Doduo,AGRI TOWN,1 Very Common,,ROUTE 3: PROCELLA STRAITS,
+#084,Doduo,ROUTE 3: PROCELLA STRAITS,2 Common,,AGRI TOWN,
+#085,Dodrio,AGRI TOWN,2 Common,,ROUTE 3: PROCELLA STRAITS,
+#085,Dodrio,ROUTE 3: PROCELLA STRAITS,3 Uncommon,,AGRI TOWN,
+#086,Seel,THE TUNDRA,2 Common,,,
+#087,Dewgong,THE TUNDRA,3 Uncommon,,,
+#088,Grimer,UBERRIME CITY,4 Rare,,,
+#088,Grimer (Alolan),UBERRIME CITY,4 Rare,,,
+#089,Muk,UBERRIME CITY,4 Rare,,,
+#089,Muk (Alolan),UBERRIME CITY,4 Rare,,,
+#090,Shellder,ROUTE 1: THE MILIA,3 Uncommon,,,
+#091,Cloyster,ROUTE 1: THE MILIA,4 Rare,,,
+#092,Gastly,ROUTE 10: LAKE LEBES,2 Common,,,Starter
+#093,Haunter,ROUTE 10: LAKE LEBES,3 Uncommon,,,Starter
+#094,Gengar,ROUTE 10: LAKE LEBES,4 Rare,,,Starter
+#095,Onix,PULLUS MAZE,1 Very Common,,,
+#096,Drowzee,VETUS ISLE,3 Uncommon,,,
+#097,Hypno,VETUS ISLE,4 Rare,,,
+#098,Krabby,ROUTE 1: THE MILIA,2 Common,,,
+#099,Kingler,ROUTE 1: THE MILIA,2 Common,,,
+#100,Voltorb,PROCELLA PRAIRIE,1 Very Common,,,
+#101,Electrode,PROCELLA PRAIRIE,2 Common,,,
+#102,Exeggcute,VETUS ISLE,4 Rare,,,
+#103,Exeggutor (Alolan),ROUTE 1: THE MILIA,5 Ultra Rare,,,
+#103,Exeggutor,VETUS ISLE,4 Rare,,,
+#104,Cubone,MT ADURO,4 Rare,,ROUTE 5: NIVEUS PASS,
+#104,Cubone,ROUTE 5: NIVEUS PASS,3 Uncommon,,MT ADURO,
+#105,Marowak (Alolan),MT ADURO,3 Uncommon,,,
+#105,Marowak,ROUTE 5: NIVEUS PASS,4 Rare,,,
+#106,Hitmonlee,PISCARI TOWN,1 Very Common,,,
+#107,Hitmonchan,PISCARI TOWN,1 Very Common,,,
+#108,Lickitung,ROUTE 4: QUOD GALEA,4 Rare,,,
+#109,Koffing,ROUTE 1: THE MILIA,4 Rare,,,
+#110,Weezing,ROUTE 1: THE MILIA,5 Ultra Rare,,,
+#111,Rhyhorn,PROCELLA PRAIRIE,3 Uncommon,,ROUTE 6: THE BENDS,Starter
+#111,Rhyhorn,ROUTE 6: THE BENDS,2 Common,,PROCELLA PRAIRIE,Starter
+#112,Rhydon,PROCELLA PRAIRIE,3 Uncommon,,ROUTE 6: THE BENDS,Starter
+#112,Rhydon,ROUTE 6: THE BENDS,2 Common,,PROCELLA PRAIRIE,Starter
+#113,Chansey,ROUTE 4: QUOD GALEA,4 Rare,,,Starter
+#114,Tangela,ROUTE 4: QUOD GALEA,4 Rare,,,
+#115,Kangaskhan,ROUTE 4: QUOD GALEA,5 Ultra Rare,,STIPES CITY,
+#115,Kangaskhan,STIPES CITY,4 Rare,,Route 4: Quod Galea,
+#116,Horsea,ROUTE 1: THE MILIA,4 Rare,,THE DELUGE,Starter
+#116,Horsea,THE DELUGE,2 Common,,ROUTE 1: THE MILIA,Starter
+#117,Seadra,ROUTE 1: THE MILIA,4 Rare,,THE DELUGE,Starter
+#117,Seadra,THE DELUGE,2 Common,,ROUTE 1: THE MILIA,Starter
+#118,Goldeen,ROUTE 1: THE MILIA,1 Very Common,,Lake Duo Dulcis,Fishing
+#119,Seaking,ROUTE 1: THE MILIA,2 Common,,Lake Duo Dulcis,Fishing
+#120,Staryu,HUDOR REEF,1 Very Common,,ROUTE 1: THE MILIA,
+#120,Staryu,ROUTE 1: THE MILIA,2 Common,,HUDOR REEF,
+#121,Starmie,HUDOR REEF,2 Common,,ROUTE 1: THE MILIA,
+#121,Starmie,ROUTE 1: THE MILIA,3 Uncommon,,HUDOR REEF,
+#122,Mr. Mime,CAECUS TOWN,2 Common,,,
+#123,Scyther,ROUTE 10: LAKE LEBES,3 Uncommon,,,
+#124,Jynx,CAECUS TOWN,5 Ultra Rare,,ROUTE 5: NIVEUS PASS,
+#124,Jynx,ROUTE 5: NIVEUS PASS,3 Uncommon,,CAECUS TOWN,
+#125,Electabuzz,UBERRIME CITY,2 Common,,,Starter
+#126,Magmar,MT ADURO,3 Uncommon,,,Starter
+#127,Pinsir,ROUTE 10: LAKE LEBES,3 Uncommon,,,
+#128,Tauros,AGRI TOWN,2 Common,,,
+#129,Magikarp,- ANYWHERE,1 Very Common,Fishing,"ROUTE 1: THE MILIA, LAKE DUO DULCIS","Fishing (Anywhere, Common)"
+#129,Magikarp,LAKE DUO DULCIS,1 Very Common,,ROUTE 1: THE MILIA,"Fishing (Anywhere, Common)"
+#129,Magikarp,ROUTE 1: THE MILIA,1 Very Common,,Lake Duo Dulcis,"Fishing (Anywhere, Common)"
+#130,Gyarados,- ANYWHERE,5 Ultra Rare,Fishing,"ROUTE 1: THE MILIA, LAKE DUO DULCIS","Fishing (Anywhere, Uncommon)"
+#130,Gyarados,LAKE DUO DULCIS,4 Rare,,ROUTE 1: THE MILIA,"Fishing (Anywhere, Uncommon)"
+#130,Gyarados,ROUTE 1: THE MILIA,3 Uncommon,,Lake Duo Dulcis,"Fishing (Anywhere, Uncommon)"
+#131,Lapras,HUDOR REEF,2 Common,,,
+#132,Ditto,- ANYWHERE,5 Ultra Rare [RARE],,,
+#133,Eevee,ROUTE 4: QUOD GALEA,5 Ultra Rare [RARE],,,
+#134,Vaporeon,LAKE DUO DULCIS,5 Ultra Rare [RARE],,,
+#135,Jolteon,ROUTE 3: PROCELLA STRAITS,5 Ultra Rare [RARE],,,
+#136,Flareon,ROUTE 8: ADURO PASS,5 Ultra Rare [RARE],,,
+#137,Porygon,UBERRIME CITY,5 Ultra Rare [RARE],,,
+#138,Omanyte,????,[RARE] [FOSSIL],,,Fossil
+#139,Omastar,????,[RARE] [FOSSIL],,,Fossil
+#140,Kabuto,????,[RARE] [FOSSIL],,,Fossil
+#141,Kabutops,????,[RARE] [FOSSIL],,,Fossil
+#142,Aerodactyl,????,[RARE] [FOSSIL],,,Fossil
+#143,Snorlax,ROUTE 4: QUOD GALEA,4 Rare,Sweet Scent,,
+#144,Articuno,PAULO ABBAS AND PAULO MATRIS,6 Fateful Encounter [RARE] [LEGENDARY],,"ROUTE 7: THE 1,000 STEPS",
+#144,Articuno,"ROUTE 7: THE 1,000 STEPS",6 Fateful Encounter [RARE] [LEGENDARY],,PAULO ABBAS AND PAULO MATRIS,
+#145,Zapdos,PROCELLA PRAIRIE,6 Fateful Encounter [RARE] [LEGENDARY],,ROUTE 3: PROCELLA STRAITS,
+#145,Zapdos,ROUTE 3: PROCELLA STRAITS,6 Fateful Encounter [RARE] [LEGENDARY],,PROCELLA PRAIRIE,
+#146,Moltres,MT ADURO,6 Fateful Encounter [RARE] [LEGENDARY],,ROUTE 8: ADURO PASS,
+#146,Moltres,ROUTE 8: ADURO PASS,6 Fateful Encounter [RARE] [LEGENDARY],,MT ADURO,
+#147,Dratini,THE DELUGE,2 Common [RARE],,,Starter
+#148,Dragonair,THE DELUGE,2 Common [RARE],,,Starter
+#149,Dragonite,THE DELUGE,2 Common [RARE],,,Starter
+#150,Mewtwo,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#151,Mew,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#152,Chikorita,ROUTE 4: QUOD GALEA,4 Rare [RARE],Sweet Scent,,Starter
+#153,Bayleef,ROUTE 4: QUOD GALEA,4 Rare [RARE],Sweet Scent,,Starter
+#154,Meganium,ROUTE 4: QUOD GALEA,5 Ultra Rare [RARE],Sweet Scent,,Starter
+#155,Cyndaquil,PULLUS MAZE,3 Rare [RARE],,,Starter
+#156,Quilava,PULLUS MAZE,3 Rare [RARE],,,Starter
+#157,Typhlosion,PULLUS MAZE,5 Ultra Rare [RARE],,,Starter
+#158,Totodile,ROUTE 1: THE MILIA,4 Rare [RARE],,,Starter
+#159,Croconaw,ROUTE 1: THE MILIA,4 Rare [RARE],,,Starter
+#160,Feraligatr,ROUTE 1: THE MILIA,5 Ultra Rare [RARE],,,Starter
+#161,Sentret,ROUTE 4: QUOD GALEA,1 Very Common,,,
+#162,Furret,ROUTE 4: QUOD GALEA,2 Common,,,
+#163,Hoothoot,LAKE DUO DULCIS,2 Common,,Route 10: Lake Lebes,
+#163,Hoothoot,ROUTE 10: LAKE LEBES,4 Rare,,Lake Duo Dulcis,
+#164,Noctowl,LAKE DUO DULCIS,2 Common,,Route 10: Lake Lebes,
+#164,Noctowl,ROUTE 10: LAKE LEBES,4 Rare,,Lake Duo Dulcis,
+#165,Ledyba,ROUTE 10: LAKE LEBES,1 Very Common,,Route 4: Quod Galea,
+#165,Ledyba,ROUTE 4: QUOD GALEA,4 Rare,,Route 10: Lake Lebes,
+#165,Ledian,ROUTE 4: QUOD GALEA,5 Ultra Rare,,Route 10: Lake Lebes,
+#166,Ledian,ROUTE 10: LAKE LEBES,2 Common,,Route 4: Quod Galea,
+#167,Spinarak,STIPES CITY,2 Common,,,
+#168,Ariados,STIPES CITY,3 Uncommon,,,
+#169,Crobat,THE PULLUS MAZE,5 Ultra Rare,,,Starter
+#170,Chinchou,ROUTE 3: PROCELLA STRAITS,1 Very Common,Fishing,,Fishing
+#171,Lanturn,ROUTE 3: PROCELLA STRAITS,2 Common,Fishing,,Fishing
+#172,Pichu,ROUTE 3: PROCELLA STRAITS,4 Rare,,UBERRIME CITY,Starter
+#172,Pichu,UBERRIME CITY,1 Very Common,,ROUTE 3: PROCELLA STRAITS,Starter
+#173,Cleffa,CAECUS TOWN,3 Uncommon,,MITIS COVE,Starter
+#173,Cleffa,MITIS COVE,2 Common,,CAECUS TOWN,Starter
+#174,Igglybuff,MITIS COVE,2 Common,,,Starter
+#175,Togepi,MITIS COVE,3 Uncommon,,,Starter
+#176,Togetic,MITIS COVE,4 Rare,,,Starter
+#177,Natu,VETUS ISLE,1 Very Common,,,
+#178,Xatu,VETUS ISLE,2 Common,,,Starter
+#179,Mareep,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,Starter
+#180,Flaaffy,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,Starter
+#181,Ampharos,ROUTE 3: PROCELLA STRAITS,2 Common,,,Starter
+#182,Bellossom,ROUTE 4: QUOD GALEA,4 Rare,Sweet Scent,,Starter
+#183,Marill,LAKE DUO DULCIS,3 Uncommon,,OKEANOS TOWN,Starter
+#183,Marill,OKEANOS TOWN,3 Uncommon,,Lake Duo Dulcis,Starter
+#184,Azumarill,LAKE DUO DULCIS,4 Rare,,OKEANOS TOWN,Starter
+#184,Azumarill,OKEANOS TOWN,4 Rare,,Lake Duo Dulcis,Starter
+#185,Sudowoodo,ROUTE 6: THE BENDS,3 Uncommon,,,
+#186,Politoed,LAKE DUO DULCIS,2 Common,,,
+#187,Hoppip,ROUTE 4: QUOD GALEA,1 Very Common,,,Starter
+#188,Skiploom,ROUTE 4: QUOD GALEA,1 Very Common,,,Starter
+#189,Jumpluff,ROUTE 4: QUOD GALEA,2 Common,,,Starter
+#190,Aipom,PISCARI TOWN,3 Uncommon,,,
+#191,Sunkern,CAMPANA TOWN,1 Very Common,,,
+#192,Sunflora,CAMPANA TOWN,1 Very Common,,,
+#193,Yanma,ROUTE 10: LAKE LEBES,2 Common,,,
+#194,Wooper,LAKE DUO DULCIS,3 Uncommon,,ROUTE 1: THE MILIA,
+#194,Wooper,ROUTE 1: THE MILIA,2 Common,,Lake Duo Dulcis,
+#195,Quagsire,LAKE DUO DULCIS,3 Uncommon,,ROUTE 1: THE MILIA,
+#195,Quagsire,ROUTE 1: THE MILIA,2 Common,,Lake Duo Dulcis,
+#196,Espeon,VETUS ISLE,5 Ultra Rare [RARE],,,
+#197,Umbreon,QUOD VORAGO,5 Ultra Rare [RARE],,,
+#198,Murkrow,ROUTE 8: ADURO PASS,2 Common,,STIPES CITY,
+#198,Murkrow,STIPES CITY,1 Very Common,,ROUTE 8: ADURO PASS,
+#199,Slowking,OKEANOS TOWN,2 Common,,ROUTE 1: THE MILIA,
+#199,Slowking,ROUTE 1: THE MILIA,4 Rare,,OKEANOS TOWN,
+#200,Misdreavus,ROUTE 10: LAKE LEBES,2 Common,,,
+#201,Unown,QUOD VORAGO,4 Rare [RARE],,,
+#202,Wobbuffet,VETUS ISLE,5 Ultra Rare,,,
+#203,Girafarig,VETUS ISLE,3 Uncommon,,,
+#204,Pineco,ROUTE 10: LAKE LEBES,3 Uncommon,,,
+#205,Forretress,ROUTE 10: LAKE LEBES,4 Rare,,,
+#206,Dunsparce,THE PULLUS MAZE,3 Uncommon,,,
+#207,Gligar,ROUTE 5: NIVEUS PASS,2 Common,,,
+#208,Steelix,PULLUS MAZE,1 Very Common,,,
+#209,Snubbull,CAECUS TOWN,2 Common,,ROUTE 9: UNA WAY,
+#209,Snubbull,ROUTE 9: UNA WAY,1 Very Common,,CAECUS TOWN,
+#210,Granbull,CAECUS TOWN,3 Uncommon,,ROUTE 9: UNA WAY,
+#210,Granbull,ROUTE 9: UNA WAY,2 Common,,CAECUS TOWN,
+#211,Qwilfish,ROUTE 1: THE MILIA,3 Uncommon,,THE DELUGE,
+#211,Qwilfish,THE DELUGE,1 Very Common,,ROUTE 1: THE MILIA,
+#212,Scizor,ROUTE 10: LAKE LEBES,5 Ultra Rare,,PROCELLA PRAIRIE,
+#213,Shuckle,ROUTE 6: THE BENDS,3 Uncommon,,,
+#214,Heracross,ROUTE 10: LAKE LEBES,4 Rare,,,
+#215,Sneasel,"ROUTE 7: THE 1,000 STEPS",2 Common,,,
+#216,Teddiursa,ROUTE 4: QUOD GALEA,4 Rare,,,
+#217,Ursaring,ROUTE 4: QUOD GALEA,5 Ultra Rare,,,
+#218,Slugma,ROUTE 8: ADURO PASS,1 Very Common,,ROUTE 9: UNA WAY,
+#218,Slugma,ROUTE 9: UNA WAY,4 Rare,SOS,ROUTE 8: ADURO PASS,SOS for Snubbull
+#219,Magcargo,ROUTE 8: ADURO PASS,1 Very Common,,ROUTE 9: UNA WAY,
+#219,Magcargo,ROUTE 9: UNA WAY,4 Rare,SOS,ROUTE 8: ADURO PASS,SOS for Snubbull
+#220,Swinub,ROUTE 5: NIVEUS PASS,1 Very Common,,THE TUNDRA,Starter
+#220,Swinub,THE TUNDRA,3 Uncommon,,ROUTE 5: NIVEUS PASS,Starter
+#221,Piloswine,ROUTE 5: NIVEUS PASS,2 Common,,THE TUNDRA,Starter
+#221,Piloswine,THE TUNDRA,4 Rare,,ROUTE 5: NIVEUS PASS,Starter
+#222,Corsola,HUDOR REEF,3 Uncommon,,ROUTE 2: CORSOLA COVE,
+#222,Corsola,ROUTE 2: CORSOLA COVE,1 Very Common,,HUDOR REEF,
+#222,Corsola,ROUTE 2: CORSOLA COVE,2 Common,,HUDOR REEF,
+#222,Corsola,ROUTE 2: CORSOLA COVE,3 Uncommon,,HUDOR REEF,
+#222,Corsola,ROUTE 2: CORSOLA COVE,4 Rare,,HUDOR REEF,
+#223,Remoraid,HUDOR REEF,2 Common,,ROUTE 2: CORSOLA COVE,
+#223,Remoraid,ROUTE 2: CORSOLA COVE,3 Uncommon,,HUDOR REEF,
+#224,Octillery,HUDOR REEF,3 Uncommon,,ROUTE 2: CORSOLA COVE,
+#224,Octillery,ROUTE 2: CORSOLA COVE,4 Rare,,HUDOR REEF,
+#225,Delibird,"ROUTE 7: THE 1,000 STEPS",2 Common,,,
+#226,Mantine,HUDOR REEF,3 Uncommon,,ROUTE 2: CORSOLA COVE,
+#226,Mantine,ROUTE 2: CORSOLA COVE,4 Rare,,HUDOR REEF,
+#227,Skarmory,PROCELLA PRAIRIE,3 Uncommon,,ROUTE 3: PROCELLA STRAITS,
+#227,Skarmory,ROUTE 3: PROCELLA STRAITS,2 Common,,PROCELLA PRAIRIE,
+#228,Houndour,ROUTE 8: ADURO PASS,2 Common,,,
+#229,Houndoom,ROUTE 8: ADURO PASS,3 Uncommon,,,
+#230,Kingdra,ROUTE 1: THE MILIA,4 Rare,,THE DELUGE,Starter
+#230,Kingdra,THE DELUGE,3 Uncommon,,ROUTE 1: THE MILIA,Starter
+#231,Phanpy,ROUTE 6: THE BENDS,1 Very Common,,,
+#232,Donphan,ROUTE 6: THE BENDS,2 Common,,,
+#233,Porygon2,UBERRIME CITY,5 Ultra Rare [RARE],,,Starter
+#234,Stantler,PAULO ABBAS AND PAULO MATRIS,2 Common,,"STIPES CITY, ROUTE 10: LAKE LEBES",
+#234,Stantler,ROUTE 10: LAKE LEBES,5 Ultra Rare,,"STIPES CITY, PAULO ABBAS AND PAULO MATRIS",
+#234,Stantler,STIPES CITY,4 Rare,,"PAULO ABBAS AND PAULO MATRIS, ROUTE 10: LAKE LEBES",
+#235,Smeargle,CAECUS TOWN,3 Uncommon,,,
+#236,Tyrogue,PISCARI TOWN,1 Very Common,,,
+#237,Hitmontop,PISCARI TOWN,1 Very Common,,,
+#238,Smoochum,CAECUS TOWN,4 Rare,,,
+#239,Elekid,UBERRIME CITY,1 Very Common,,,Starter
+#240,Magby,MT ADURO,3 Uncommon,,,Starter
+#241,Miltank,AGRI TOWN,3 Uncommon,,,Starter
+#242,Blissey,ROUTE 4: QUOD GALEA,4 Rare,,,
+#243,Raikou,PROCELLA PRAIRIE,6 Fateful Encounter [RARE] [LEGENDARY],,ROUTE 3: PROCELLA STRAITS,
+#243,Raikou,ROUTE 3: PROCELLA STRAITS,6 Fateful Encounter [RARE] [LEGENDARY],,PROCELLA PRAIRIE,
+#244,Entei,MT ADURO,6 Fateful Encounter [RARE] [LEGENDARY],,ROUTE 8: ADURO PASS,
+#244,Entei,ROUTE 8: ADURO PASS,6 Fateful Encounter [RARE] [LEGENDARY],,MT ADURO,
+#245,Suicune,ROUTE 10: LAKE LEBES,6 Fateful Encounter [RARE] [LEGENDARY],,THE TUNDRA,
+#245,Suicune,THE TUNDRA,6 Fateful Encounter [RARE] [LEGENDARY],,Route 10: Lake Lebes,
+#246,Larvitar,ROUTE 6: THE BENDS,4 Rare [RARE],,,Starter
+#247,Pupitar,ROUTE 6: THE BENDS,4 Rare [RARE],,,Starter
+#248,Tyranitar,ROUTE 6: THE BENDS,5 Ultra Rare [RARE],,,Starter
+#249,Lugia,THE DELUGE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#250,Ho-Oh,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#251,Celebi,STIPES CITY,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#252,Treecko,ROUTE 4: QUOD GALEA,4 Rare [RARE],,,Starter
+#253,Grovyle,ROUTE 4: QUOD GALEA,4 Rare [RARE],,,Starter
+#254,Sceptile,ROUTE 4: QUOD GALEA,5 Ultra Rare [RARE],,,Starter
+#255,Torchic,AGRI TOWN,4 Rare [RARE],,,Starter
+#256,Combusken,AGRI TOWN,4 Rare [RARE],,,Starter
+#257,Blaziken,AGRI TOWN,5 Ultra Rare [RARE],,,Starter
+#258,Mudkip,ROUTE 1: THE MILIA,4 Rare [RARE],,,Starter
+#259,Marshtomp,ROUTE 1: THE MILIA,4 Rare [RARE],,,Starter
+#260,Swampert,ROUTE 1: THE MILIA,4 Rare [RARE],,,Starter
+#261,Poochyena,ROUTE 8: ADURO PASS,1 Very Common,,,
+#262,Mightyena,ROUTE 8: ADURO PASS,1 Very Common,,,
+#263,Zigzagoon,ROUTE 4: QUOD GALEA,1 Very Common,,AGRI TOWN,
+#264,Linoone,ROUTE 4: QUOD GALEA,2 Common,,AGRI TOWN,
+#265,Wurmple,ROUTE 10: LAKE LEBES,1 Very Common,,ROUTE 4: QUOD GALEA,Starter
+#266,Silcoon,ROUTE 10: LAKE LEBES,1 Very Common,,ROUTE 4: QUOD GALEA,Starter
+#267,Beautifly,ROUTE 10: LAKE LEBES,2 Common,,ROUTE 4: QUOD GALEA,Starter
+#268,Cascoon,ROUTE 10: LAKE LEBES,1 Very Common,,ROUTE 4: QUOD GALEA,Starter
+#269,Dustox,ROUTE 10: LAKE LEBES,2 Common,,ROUTE 4: QUOD GALEA,Starter
+#270,Lotad,ROUTE 4: QUOD GALEA,4 Rare,,,Starter
+#271,Lombre,ROUTE 4: QUOD GALEA,4 Rare,,,Starter
+#272,Ludicolo,ROUTE 4: QUOD GALEA,4 Rare,,,Starter
+#273,Seedot,ROUTE 4: QUOD GALEA,3 Uncommon,,,Starter
+#274,Nuzleaf,ROUTE 4: QUOD GALEA,4 Rare,,,Starter
+#275,Shiftry,ROUTE 4: QUOD GALEA,5 Ultra Rare,,,Starter
+#276,Taillow,ROUTE 4: QUOD GALEA,1 Very Common,,,
+#277,Swellow,ROUTE 4: QUOD GALEA,1 Very Common,,,
+#278,Wingull,OKEANOS TOWN,1 Very Common,,,
+#279,Pelipper,OKEANOS TOWN,1 Very Common,,,
+#280,Ralts,MITIS COVE,2 Common,,,Starter
+#281,Kirlia,MITIS COVE,2 Common,,,Starter
+#282,Gardevoir,MITIS COVE,2 Common,,,Starter
+#283,Surskit,ROUTE 10: LAKE LEBES,1 Very Common,,,
+#284,Masquerain,ROUTE 10: LAKE LEBES,1 Very Common,,,
+#285,Shroomish,ROUTE 4: QUOD GALEA,2 Common,,,
+#286,Breloom,ROUTE 4: QUOD GALEA,2 Common,,,
+#287,Slakoth,ROUTE 4: QUOD GALEA,3 Uncommon,,,Starter
+#288,Vigoroth,ROUTE 4: QUOD GALEA,4 Rare,,,Starter
+#289,Slaking,ROUTE 4: QUOD GALEA,5 Ultra Rare,,,Starter
+#290,Nincada,ODONTON CITY,1 Very Common,,STIPES CITY,
+#290,Nincada,STIPES CITY,2 Common,,ODONTON CITY,
+#291,Ninjask,ODONTON CITY,1 Very Common,,STIPES CITY,
+#291,Ninjask,STIPES CITY,4 Rare,,ODONTON CITY,
+#292,Shedinja,ODONTON CITY,4 Rare,,STIPES CITY,
+#292,Shedinja,STIPES CITY,1 Very Common,,ODONTON CITY,
+#293,Whismur,ROUTE 5: NIVEUS PASS,3 Uncommon,,,Starter
+#294,Loudred,ROUTE 5: NIVEUS PASS,4 Rare,,,Starter
+#295,Exploud,ROUTE 5: NIVEUS PASS,5 Ultra Rare,,,Starter
+#296,Makuhita,QUOD VORAGO,3 Uncommon,,,
+#297,Hariyama,QUOD VORAGO,3 Uncommon,,,
+#298,Azurill,LAKE DUO DULCIS,3 Uncommon,,OKEANOS TOWN,Starter
+#298,Azurill,OKEANOS TOWN,3 Uncommon,,Lake Duo Dulcis,Starter
+#299,Nosepass,ROUTE 6: THE BENDS,3 Uncommon,,,
+#300,Skitty,CAECUS TOWN,4 Rare,,,
+#301,Delcatty,CAECUS TOWN,4 Rare,,,
+#302,Sableye,CAMPANA TOWN,5 Ultra Rare,,PULLUS MAZE,
+#302,Sableye,PULLUS MAZE,4 Rare,,CAMPANA TOWN,
+#303,Mawile,PULLUS MAZE,2 Common,,ROUTE 9: UNA WAY,
+#303,Mawile,ROUTE 9: UNA WAY,4 Rare,,PULLUS MAZE,
+#304,Aron,"ROUTE 7: THE 1,000 STEPS",1 Very Common,,,Starter
+#305,Lairon,"ROUTE 7: THE 1,000 STEPS",1 Very Common,,,Starter
+#306,Aggron,"ROUTE 7: THE 1,000 STEPS",1 Very Common,,,Starter
+#307,Meditite,ROUTE 6: THE BENDS,3 Uncommon,,,
+#308,Medicham,ROUTE 6: THE BENDS,4 Rare,,,
+#309,Electrike,PROCELLA PRAIRIE,2 Common,,ROUTE 3: PROCELLA STRAITS,
+#309,Electrike,ROUTE 3: PROCELLA STRAITS,4 Rare,,PROCELLA PRAIRIE,
+#310,Manectric,PROCELLA PRAIRIE,2 Common,,ROUTE 3: PROCELLA STRAITS,
+#310,Manectric,ROUTE 3: PROCELLA STRAITS,4 Rare,,PROCELLA PRAIRIE,
+#311,Plusle,ROUTE 3: PROCELLA STRAITS,5 Ultra Rare,Electric Type In Party,,
+#312,Minun,ROUTE 3: PROCELLA STRAITS,5 Ultra Rare,Electric Type In Party,,
+#313,Volbeat,ROUTE 4: QUOD GALEA,4 Rare,,,
+#314,Illumise,ROUTE 4: QUOD GALEA,4 Rare,,,Starter
+#315,Roselia,ROUTE 4: QUOD GALEA,1 Very Common,,,
+#316,Gulpin,VETUS ISLE,3 Uncommon,,,
+#317,Swalot,VETUS ISLE,3 Uncommon,,,
+#318,Carvanha,THE DELUGE,1 Very Common,,,
+#319,Sharpedo,THE DELUGE,1 Very Common,,,
+#320,Wailmer,HUDOR REEF,4 Rare,,,
+#321,Wailord,HUDOR REEF,5 Ultra Rare,,,
+#322,Numel,MT ADURO,1 Very Common,,,
+#323,Camerupt,MT ADURO,1 Very Common,,,
+#324,Torkoal,MT ADURO,3 Uncommon,,,
+#325,Spoink,VETUS ISLE,2 Common,,,
+#326,Grumpig,VETUS ISLE,2 Common,,,
+#327,Spinda,MT ADURO,4 Rare,,,
+#328,Trapinch,ODONTON CITY,1 Very Common,,,Starter
+#329,Vibrava,ODONTON CITY,1 Very Common,,,Starter
+#330,Flygon,ODONTON CITY,1 Very Common,,,Starter
+#331,Cacnea,CAMPANA TOWN,3 Uncommon,,,
+#332,Cacturne,CAMPANA TOWN,4 Rare,,,
+#333,Swablu,LAKE DUO DULCIS,3 Uncommon,,,
+#334,Altaria,LAKE DUO DULCIS,3 Uncommon,,,
+#335,Zangoose,VETUS ISLE,4 Rare,,,
+#336,Seviper,VETUS ISLE,4 Rare,,,
+#337,Lunatone,ROUTE 6: THE BENDS,5 Ultra Rare,,,
+#338,Solrock,ROUTE 6: THE BENDS,5 Ultra Rare,,,
+#339,Barboach,ROUTE 3: PROCELLA STRAITS,3 Uncommon,Fishing,,
+#340,Whiscash,ROUTE 3: PROCELLA STRAITS,3 Uncommon,Fishing,,
+#341,Corphish,HUDOR REEF,1 Very Common,,,
+#342,Crawdaunt,HUDOR REEF,3 Uncommon,,,
+#343,Baltoy,ROUTE 5: NIVEUS PASS,3 Uncommon,,,
+#344,Claydol,ROUTE 5: NIVEUS PASS,3 Uncommon,,,
+#345,Lileep,????,[RARE] [FOSSIL],,,
+#346,Cradily,????,[RARE] [FOSSIL],,,
+#347,Anorith,????,[RARE] [FOSSIL],,,
+#348,Armaldo,????,[RARE] [FOSSIL],,,
+#349,Feebas,THE DELUGE,4 Rare,,,
+#350,Milotic,THE DELUGE,4 Rare,,,
+#351,Castform,AGRI TOWN,5 Ultra Rare [RARE],,,
+#351,Castform (Sunny),CAMPANA TOWN,[RARE],,,
+#351,Castform (Rainy),ROUTE 3: PROCELLA STRAITS,[RARE],,,
+#351,Castform (Snowy),THE TUNDRA,[RARE],,,
+#352,Kecleon,AGRI TOWN,4 Rare,,,
+#353,Shuppet,QUOD VORAGO,1 Very Common,,Route 10: Lake Lebes,
+#353,Shuppet,ROUTE 10: LAKE LEBES,1 Very Common,,QUOD VORAGO,
+#354,Banette,QUOD VORAGO,1 Very Common,,Route 10: Lake Lebes,
+#354,Banette,ROUTE 10: LAKE LEBES,1 Very Common,,QUOD VORAGO,
+#355,Duskull,ROUTE 10: LAKE LEBES,3 Uncommon,,,Starter
+#356,Dusclops,ROUTE 10: LAKE LEBES,3 Uncommon,,,Starter
+#357,Tropius,ROUTE 4: QUOD GALEA,5 Ultra Rare,,CAMPANA TOWN,
+#358,Chimecho,ODONTON CITY,1 Very Common,,,
+#359,Absol,ODONTON CITY,5 Ultra Rare,,"QUOD VORAGO, PAULO ABBAS AND PAULO MATRIS",
+#359,Absol,PAULO ABBAS AND PAULO MATRIS,4 Rare,,"QUOD VORAGO, ODONTON CITY",
+#359,Absol,QUOD VORAGO,3 Uncommon,,"ODONTON CITY, PAULO ABBAS AND PAULO MATRIS",
+#360,Wynaut,VETUS ISLE,5 Ultra Rare,,,
+#361,Snorunt,ROUTE 5: NIVEUS PASS,1 Very Common,,,
+#362,Glalie,ROUTE 5: NIVEUS PASS,1 Very Common,,,
+#363,Spheal,THE TUNDRA,1 Very Common,,,Starter
+#364,Sealeo,THE TUNDRA,1 Very Common,,,Starter
+#365,Walrein,THE TUNDRA,1 Very Common,,,Starter
+#366,Clamperl,OKEANOS TOWN,1 Very Common,,ROUTE 2: CORSOLA COVE,
+#366,Clamperl,ROUTE 2: CORSOLA COVE,2 Common,,OKEANOS TOWN,
+#367,Huntail,OKEANOS TOWN,2 Common,,ROUTE 2: CORSOLA COVE,
+#367,Huntail,ROUTE 2: CORSOLA COVE,4 Rare,,OKEANOS TOWN,
+#368,Gorebyss,OKEANOS TOWN,4 Rare,,ROUTE 2: CORSOLA COVE,
+#368,Gorebyss,ROUTE 2: CORSOLA COVE,2 Common,,OKEANOS TOWN,
+#369,Relicanth,HUDOR REEF,4 Rare,Requires HM Dive,ROUTE 2: CORSOLA COVE,
+#369,Relicanth,ROUTE 2: CORSOLA COVE,5 Ultra Rare,Requires HM Dive,HUDOR REEF,
+#370,Luvdisc,HUDOR REEF,2 Common,,ROUTE 2: CORSOLA COVE,
+#370,Luvdisc,ROUTE 2: CORSOLA COVE,2 Common,,HUDOR REEF,
+#371,Bagon,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#372,Shelgon,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#373,Salamence,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#374,Beldum,"ROUTE 7: THE 1,000 STEPS",3 Uncommon [RARE],,,Starter
+#375,Metang,"ROUTE 7: THE 1,000 STEPS",3 Uncommon [RARE],,,Starter
+#376,Metagross,"ROUTE 7: THE 1,000 STEPS",3 Uncommon [RARE],,,Starter
+#377,Regirock,ROUTE 6: THE BENDS,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#378,Regice,ROUTE 5: NIVEUS PASS,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#379,Registeel,THE PULLUS MAZE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#380,Latias,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#381,Latios,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#382,Kyogre,PISCARI TOWN,6 Fateful Encounter [RARE] [LEGENDARY],,ROUTE 1: THE MILIA,
+#382,Kyogre,ROUTE 1: THE MILIA,6 Fateful Encounter [RARE] [LEGENDARY],,PISCARI TOWN,
+#383,Groudon,ODONTON CITY,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#384,Rayquaza,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#385,Jirachi,ODONTON CITY,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#386,Deoxys,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#387,Turtwig,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#388,Grotle,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#389,Torterra,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#390,Chimchar,MT ADURO,3 Uncommon [RARE],,,Starter
+#391,Monferno,MT ADURO,3 Uncommon [RARE],,,Starter
+#392,Infernape,MT ADURO,3 Uncommon [RARE],,,Starter
+#393,Piplup,THE TUNDRA,2 Common [RARE],,,Starter
+#394,Prinplup,THE TUNDRA,2 Common [RARE],,,Starter
+#395,Empoleon,THE TUNDRA,2 Common [RARE],,,Starter
+#396,Starly,CAECUS TOWN,1 Very Common,,"ROUTE 4: QUOD GALEA, LAKE DUO DULCIS",Starter
+#396,Starly,LAKE DUO DULCIS,2 Common,,"ROUTE 4: QUOD GALEA, CAECUS TOWN",Starter
+#396,Starly,ROUTE 4: QUOD GALEA,4 Rare,,"CAECUS TOWN, LAKE DUO DULCIS",Starter
+#397,Staravia,CAECUS TOWN,2 Common,,"ROUTE 4: QUOD GALEA, LAKE DUO DULCIS",Starter
+#397,Staravia,LAKE DUO DULCIS,2 Common,,"ROUTE 4: QUOD GALEA, CAECUS TOWN",Starter
+#397,Staravia,ROUTE 4: QUOD GALEA,4 Rare,,"CAECUS TOWN, LAKE DUO DULCIS",Starter
+#398,Staraptor,CAECUS TOWN,3 Uncommon,,"ROUTE 4: QUOD GALEA, LAKE DUO DULCIS",Starter
+#398,Staraptor,LAKE DUO DULCIS,2 Common,,"ROUTE 4: QUOD GALEA, CAECUS TOWN",Starter
+#398,Staraptor,ROUTE 4: QUOD GALEA,4 Rare,,"CAECUS TOWN, LAKE DUO DULCIS",Starter
+#399,Bidoof,LAKE DUO DULCIS,1 Very Common,,,
+#400,Bibarel,LAKE DUO DULCIS,1 Very Common,,,
+#401,Kricketot,ROUTE 10: LAKE LEBES,3 Uncommon,,,
+#402,Kricketune,ROUTE 10: LAKE LEBES,3 Uncommon,,,
+#403,Shinx,ROUTE 3: PROCELLA STRAITS,2 Common,,,Starter
+#404,Luxio,ROUTE 3: PROCELLA STRAITS,2 Common,,,Starter
+#405,Luxray,ROUTE 3: PROCELLA STRAITS,2 Common,,,Starter
+#406,Budew,ROUTE 4: QUOD GALEA,1 Very Common,,,Starter
+#407,Roserade,ROUTE 4: QUOD GALEA,1 Very Common,,,Starter
+#408,Cranidos,????,[RARE] [FOSSIL],,,
+#409,Rampardos,????,[RARE] [FOSSIL],,,
+#410,Shieldon,????,[RARE] [FOSSIL],,,
+#411,Bastiodon,????,[RARE] [FOSSIL],,,
+#412,Burmy (Plant),ROUTE 4: QUOD GALEA,3 Uncommon,,,
+#412,Burmy (Sandy),ROUTE 6: THE BENDS,3 Uncommon,,,
+#412,Burmy (Trash),ROUTE 9: UNA WAY,3 Uncommon,,,
+#413,Wormadam (Plant),ROUTE 4: QUOD GALEA,3 Uncommon,,,
+#413,Wormadam (Sandy),ROUTE 6: THE BENDS,3 Uncommon,,,
+#413,Wormadam (Trash),ROUTE 9: UNA WAY,3 Uncommon,,,
+#414,Mothim,ROUTE 9: UNA WAY,4 Rare,,"ROUTE 4: QUOD GALEA, ROUTE 6: UNA WAY",
+#415,Combee,ROUTE 4: QUOD GALEA,3 Uncommon,,,
+#416,Vespiquen,ROUTE 4: QUOD GALEA,3 Uncommon,,,
+#417,Pachirisu,ROUTE 6: THE BENDS,3 Uncommon,,,
+#418,Buizel,OKEANOS TOWN,2 Common,,,
+#419,Floatzel,OKEANOS TOWN,2 Common,,,
+#420,Cherubi,CAMPANA TOWN,2 Common,,,
+#421,Cherrim,CAMPANA TOWN,2 Common,,,
+#422,Shellos (East/Blue),ROUTE 1: THE MILIA,1 Very Common,,,
+#422,Shellos (West/Pink),ROUTE 1: THE MILIA,1 Very Common,,,
+#423,Gastrodon (East/Blue),ROUTE 1: THE MILIA,1 Very Common,,,
+#423,Gastrodon (West/Pink),ROUTE 1: THE MILIA,1 Very Common,,,
+#424,Ambipom,PISCARI TOWN,3 Uncommon,,,
+#425,Drifloon,ROUTE 4: QUOD GALEA,4 Rare,,QUOD VORAGO,
+#426,Drifblim,ROUTE 4: QUOD GALEA,4 Rare,,QUOD VORAGO,
+#427,Buneary,ROUTE 4: QUOD GALEA,1 Very Common,,,
+#428,Lopunny,ROUTE 4: QUOD GALEA,1 Very Common,,,
+#429,Mismagius,ROUTE 10: LAKE LEBES,2 Common,,,
+#430,Honchkrow,ROUTE 8: ADURO PASS,4 Rare,,STIPES CITY,
+#430,Honchkrow,STIPES CITY,1 Very Common,,ROUTE 8: ADURO PASS,
+#431,Glameow,AGRI TOWN,3 Uncommon,,,
+#432,Purugly,AGRI TOWN,4 Rare,,,
+#433,Chingling,ODONTON CITY,1 Very Common,,,
+#434,Stunky,VETUS ISLE,2 Common,,,
+#435,Skuntank,VETUS ISLE,2 Common,,,
+#436,Bronzor,PAULO ABBAS AND PAULO MATRIS,2 Common,,,
+#437,Bronzong,PAULO ABBAS AND PAULO MATRIS,3 Uncommon,,,
+#438,Bonsly,ROUTE 6: THE BENDS,3 Uncommon,,,
+#439,Mime Jr.,CAECUS TOWN,1 Very Common,,,
+#440,Happiny,ROUTE 4: QUOD GALEA,4 Rare,,,Starter
+#441,Chatot,ROUTE 4: QUOD GALEA,3 Uncommon,,,
+#442,Spiritomb,QUOD VORAGO,4 Rare [RARE],,,
+#443,Gible,THE DELUGE,3 Uncommon [RARE],,,Starter
+#444,Gabite,THE DELUGE,3 Uncommon [RARE],,,Starter
+#445,Garchomp,THE DELUGE,3 Uncommon [RARE],,,Starter
+#446,Munchlax,ROUTE 4: QUOD GALEA,4 Rare,Sweet Scent,,
+#447,Riolu,QUOD VORAGO,3 Uncommon,,,
+#448,Lucario,QUOD VORAGO,3 Uncommon,,,
+#449,Hippopotas,ROUTE 6: THE BENDS,4 Rare,,,
+#450,Hippowdon,ROUTE 6: THE BENDS,5 Ultra Rare,,,
+#451,Skorupi,ROUTE 1: THE MILIA,4 Rare,,,
+#452,Drapion,ROUTE 1: THE MILIA,5 Ultra Rare,,,
+#453,Croagunk,VETUS ISLE,2 Common,,,
+#454,Toxicroak,VETUS ISLE,2 Common,,,
+#455,Carnivine,ROUTE 4: QUOD GALEA,4 Rare,,,
+#456,Finneon,HUDOR REEF,3 Uncommon,,ROUTE 2: CORSOLA COVE,
+#456,Finneon,ROUTE 2: CORSOLA COVE,4 Rare,,HUDOR REEF,
+#457,Lumineon,HUDOR REEF,4 Rare,,ROUTE 2: CORSOLA COVE,
+#457,Lumineon,ROUTE 2: CORSOLA COVE,5 Ultra Rare,,HUDOR REEF,
+#458,Mantyke,HUDOR REEF,4 Rare,,,
+#459,Snover,"ROUTE 7: THE 1,000 STEPS",1 Very Common,,,
+#460,Abomasnow,"ROUTE 7: THE 1,000 STEPS",1 Very Common,,,
+#461,Weavile,"ROUTE 7: THE 1,000 STEPS",2 Common,,,
+#462,Magnezone,ROUTE 9: UNA WAY,1 Very Common,,,Starter
+#463,Lickilicky,ROUTE 4: QUOD GALEA,5 Ultra Rare,,,
+#464,Rhyperior,PROCELLA PRAIRIE,3 Uncommon,,ROUTE 6: THE BENDS,
+#464,Rhyperior,ROUTE 6: THE BENDS,2 Common,,PROCELLA PRAIRIE,Starter
+#465,Tangrowth,ROUTE 4: QUOD GALEA,5 Ultra Rare,,,
+#466,Electivire,UBERRIME CITY,1 Very Common,,,Starter
+#467,Magmortar,MT ADURO,5 Ultra Rare,,,Starter
+#468,Togekiss,MITIS COVE,3 Uncommon,,,Starter
+#469,Yanmega,ROUTE 10: LAKE LEBES,2 Common,,,
+#470,Leafeon,PAULO ABBAS AND PAULO MATRIS,5 Ultra Rare [RARE],,,
+#471,Glaceon,PAULO ABBAS AND PAULO MATRIS,5 Ultra Rare [RARE],,,
+#472,Gliscor,ROUTE 5: NIVEUS PASS,2 Common,,,
+#473,Mamoswine,ROUTE 5: NIVEUS PASS,1 Very Common,,,Starter
+#474,Porygon-Z,UBERRIME CITY,5 Ultra Rare [RARE],,,Starter
+#475,Gallade,MITIS COVE,2 Common,,,Starter
+#476,Probopass,ROUTE 6: THE BENDS,3 Uncommon,,,
+#477,Dusknoir,ROUTE 10: LAKE LEBES,3 Uncommon,,,Starter
+#478,Froslass,ROUTE 5: NIVEUS PASS,1 Very Common,,,
+#479,Rotom,QUOD VORAGO,4 Rare [RARE],,UBERRIME CITY,
+#479,Rotom,UBERRIME CITY,5 Ultra Rare [RARE],,QUOD VORAGO,
+#480,Uxie,VETUS ISLE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#481,Mesprit,VETUS ISLE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#482,Azelf,VETUS ISLE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#483,Dialga,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#484,Palkia,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#485,Heatran,MT ADURO,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#486,Regigigas,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#487,Giratina,CULTELLUS REEFS,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#488,Cresselia,ROUTE 9: UNA WAY,6 Fateful Encounter [RARE] [LEGENDARY],,UBERRIME CITY,
+#488,Cresselia,UBERRIME CITY,6 Fateful Encounter [RARE] [LEGENDARY],,ROUTE 9: UNA WAY,
+#489,Phione,HUDOR REEF,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#490,Manaphy,HUDOR REEF,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#491,Darkrai,QUOD VORAGO,6 Fateful Encounter [RARE] [LEGENDARY],,UBERRIME CITY,
+#491,Darkrai,UBERRIME CITY,6 Fateful Encounter [RARE] [LEGENDARY],,QUOD VORAGO,
+#492,Shaymin,ROUTE 4: QUOD GALEA,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#493,Arceus,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#494,Victini,OKEANOS TOWN,6 Fateful Encounter [RARE] [LEGENDARY],,THE LIGHTHOUSE,
+#494,Victini,THE LIGHTHOUSE,6 Fateful Encounter [RARE] [LEGENDARY],,OKEANOS TOWN,
+#495,Snivy,ROUTE 4: QUOD GALEA,[RARE],,,Starter
+#496,Servine,ROUTE 4: QUOD GALEA,[RARE],,,Starter
+#497,Serperior,ROUTE 4: QUOD GALEA,[RARE],,,Starter
+#498,Tepig,ROUTE 8: ADURO PASS,[RARE],,,Starter
+#499,Pignite,ROUTE 8: ADURO PASS,[RARE],,,Starter
+#500,Emboar,ROUTE 8: ADURO PASS,[RARE],,,Starter
+#501,Oshawott,OKEANOS TOWN,4 Rare [RARE],,,Starter
+#502,Dewott,OKEANOS TOWN,4 Rare [RARE],,,Starter
+#503,Samurott,OKEANOS TOWN,4 Rare [RARE],,,Starter
+#504,Patrat,AGRI TOWN,1 Very Common,,,
+#505,Watchog,AGRI TOWN,2 Common,,,
+#506,Lillipup,AGRI TOWN,1 Very Common,,,Starter
+#507,Herdier,AGRI TOWN,2 Common,,,Starter
+#508,Stoutland,AGRI TOWN,3 Uncommon,,,Starter
+#509,Purrloin,ROUTE 8: ADURO PASS,4 Rare,,,
+#510,Liepard,ROUTE 8: ADURO PASS,4 Rare,,,
+#511,Pansage,VETUS ISLE,4 Rare,,,
+#512,Simisage,VETUS ISLE,4 Rare,,,
+#513,Pansear,VETUS ISLE,4 Rare,,,
+#514,Simisear,VETUS ISLE,4 Rare,,,
+#515,Panpour,VETUS ISLE,4 Rare,,,
+#516,Simipour,VETUS ISLE,4 Rare,,,
+#517,Munna,VETUS ISLE,3 Uncommon,,,
+#518,Musharna,VETUS ISLE,3 Uncommon,,,
+#519,Pidove,ROUTE 3: PROCELLA STRAITS,1 Very Common,,UBERRIME CITY,Starter
+#519,Pidove,UBERRIME CITY,2 Common,,ROUTE 3: PROCELLA STRAITS,Starter
+#520,Tranquill,ROUTE 3: PROCELLA STRAITS,1 Very Common,,UBERRIME CITY,Starter
+#520,Tranquill,UBERRIME CITY,2 Common,,ROUTE 3: PROCELLA STRAITS,Starter
+#521,Unfezant,ROUTE 3: PROCELLA STRAITS,1 Very Common,,UBERRIME CITY,Starter
+#521,Unfezant,UBERRIME CITY,2 Common,,ROUTE 3: PROCELLA STRAITS,Starter
+#522,Blitzle,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,
+#523,Zebstrika,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,
+#524,Roggenrola,ROUTE 6: THE BENDS,1 Very Common,,,Starter
+#525,Boldore,ROUTE 6: THE BENDS,1 Very Common,,,Starter
+#526,Gigalith,ROUTE 6: THE BENDS,1 Very Common,,,Starter
+#527,Woobat,ROUTE 5: NIVEUS PASS,4 Rare,,,
+#528,Swoobat,ROUTE 5: NIVEUS PASS,4 Rare,,,
+#529,Drilbur,ROUTE 6: THE BENDS,1 Very Common,,,
+#530,Excadrill,ROUTE 6: THE BENDS,1 Very Common,,,
+#531,Audino,AGRI TOWN,4 Rare,,,
+#532,Timburr,QUOD VORAGO,2 Common,,,Starter
+#533,Gurdurr,QUOD VORAGO,2 Common,,,Starter
+#534,Conkeldurr,QUOD VORAGO,2 Common,,,Starter
+#535,Tympole,LAKE DUO DULCIS,2 Common,,,Starter
+#536,Palpitoad,LAKE DUO DULCIS,2 Common,,,Starter
+#537,Seismitoad,LAKE DUO DULCIS,2 Common,,,Starter
+#538,Throh,PISCARI TOWN,4 Rare,,,
+#539,Sawk,PISCARI TOWN,4 Rare,,,
+#540,Sewaddle,ROUTE 4: QUOD GALEA,1 Very Common,Sweet Scent,,Starter
+#541,Swadloon,ROUTE 4: QUOD GALEA,3 Uncommon,Sweet Scent,,Starter
+#542,Leavanny,ROUTE 4: QUOD GALEA,4 Rare,Sweet Scent,,Starter
+#543,Venipede,VETUS ISLE,2 Common,,,Starter
+#544,Whirlipede,VETUS ISLE,2 Common,,,Starter
+#545,Scolipede,VETUS ISLE,2 Common,,,Starter
+#546,Cottonee,ROUTE 4: QUOD GALEA,4 Rare,,,
+#547,Whimsicott,ROUTE 4: QUOD GALEA,4 Rare,,,
+#548,Petilil,ROUTE 4: QUOD GALEA,2 Common,,,
+#549,Lilligant,ROUTE 4: QUOD GALEA,2 Common,,,
+#550,Basculin,HUDOR REEF,2 Common,,,
+#551,Sandile,ROUTE 6: THE BENDS,3 Uncommon,,,Starter
+#552,Krokorok,ROUTE 6: THE BENDS,3 Uncommon,,,Starter
+#553,Krookodile,ROUTE 6: THE BENDS,4 Rare,,,Starter
+#554,Darumaka,PULLUS MAZE,3 Uncommon,,,
+#555,Darmanitan,PULLUS MAZE,3 Uncommon,,,
+#556,Maractus,CAMPANA TOWN,4 Rare,,,
+#557,Dwebble,ROUTE 6: THE BENDS,4 Rare,,,
+#558,Crustle,ROUTE 6: THE BENDS,5 Ultra Rare,,,
+#559,Scraggy,ROUTE 8: ADURO PASS,3 Uncommon,,,
+#560,Scrafty,ROUTE 8: ADURO PASS,3 Uncommon,,,
+#561,Sigilyph,VETUS ISLE,4 Rare,,,
+#562,Yamask,QUOD VORAGO,3 Uncommon,,,
+#563,Cofagrigus,QUOD VORAGO,3 Uncommon,,,
+#564,Tirtouga,????,[RARE] [FOSSIL],,,
+#565,Carracosta,????,[RARE] [FOSSIL],,,
+#566,Archen,????,[RARE] [FOSSIL],,,
+#567,Archeops,????,[RARE] [FOSSIL],,,
+#568,Trubbish,ROUTE 9: UNA WAY,2 Common,,,
+#569,Garbodor,ROUTE 9: UNA WAY,3 Uncommon,,,
+#570,Zorua,ROUTE 8: ADURO PASS,4 Rare,,,
+#571,Zoroark,ROUTE 8: ADURO PASS,4 Rare,,,
+#572,Minccino,AGRI TOWN,3 Uncommon,,,
+#573,Cinccino,AGRI TOWN,4 Rare,,,
+#574,Gothita,"ROUTE 7: THE 1,000 STEPS",4 Rare,,,Starter
+#575,Gothorita,"ROUTE 7: THE 1,000 STEPS",4 Rare,,,Starter
+#576,Gothitelle,"ROUTE 7: THE 1,000 STEPS",5 Ultra Rare,,,Starter
+#577,Solosis,"ROUTE 7: THE 1,000 STEPS",4 Rare,,,Starter
+#578,Duosion,"ROUTE 7: THE 1,000 STEPS",5 Ultra Rare,,,Starter
+#579,Reuniclus,"ROUTE 7: THE 1,000 STEPS",5 Ultra Rare,,,Starter
+#580,Ducklett,HUDOR REEF,1 Very Common,,Lake Duo Dulcis,
+#580,Ducklett,LAKE DUO DULCIS,1 Very Common,,HUDOR REEF,
+#581,Swanna,HUDOR REEF,2 Common,,Lake Duo Dulcis,
+#581,Swanna,LAKE DUO DULCIS,1 Very Common,,HUDOR REEF,
+#582,Vanillite,ODONTON CITY,2 Common,,,Starter
+#583,Vanillish,ODONTON CITY,2 Common,,,Starter
+#584,Vanilluxe,ODONTON CITY,2 Common,,,Starter
+#585,Deerling,AGRI TOWN,4 Rare,,CAMPANA TOWN,
+#585,Deerling,CAMPANA TOWN,3 Uncommon,,AGRI TOWN,
+#586,Sawsbuck,AGRI TOWN,4 Rare,,CAMPANA TOWN,
+#586,Sawsbuck,CAMPANA TOWN,3 Uncommon,,AGRI TOWN,
+#587,Emolga,PROCELLA PRAIRIE,3 Uncommon,,ROUTE 3: PROCELLA STRAITS,
+#587,Emolga,ROUTE 3: PROCELLA STRAITS,5 Ultra Rare,Sweet Scent,PROCELLA PRAIRIE,
+#588,Karrablast,ROUTE 10: LAKE LEBES,2 Common,,,
+#589,Escavalier,ROUTE 10: LAKE LEBES,3 Uncommon,,,
+#590,Foongus,ROUTE 4: QUOD GALEA,3 Uncommon,,,
+#591,Amoonguss,ROUTE 4: QUOD GALEA,4 Rare,,,
+#592,Frillish,ROUTE 1: THE MILIA,4 Rare,,THE DELUGE,Fishing
+#592,Frillish,THE DELUGE,1 Very Common,,ROUTE 1: THE MILIA,Fishing
+#593,Jellicent,THE DELUGE,1 Very Common,,ROUTE 1: THE MILIA,Fishing
+#593,Jellicent,THE DELUGE,4 Rare,,THE DELUGE,Fishing
+#594,Alomomola,HUDOR REEF,4 Rare,,,Fishing
+#595,Joltik,PROCELLA PRAIRIE,4 Rare,,ROUTE 3: PROCELLA STRAITS,
+#595,Joltik,ROUTE 3: PROCELLA STRAITS,5 Ultra Rare,Electric Type In Party,PROCELLA PRAIRIE,
+#596,Galvantula,PROCELLA PRAIRIE,4 Rare,,ROUTE 3: PROCELLA STRAITS,
+#596,Galvantula,ROUTE 3: PROCELLA STRAITS,5 Ultra Rare,Electric Type In Party,PROCELLA PRAIRIE,
+#597,Ferroseed,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,
+#598,Ferrothorn,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,
+#599,Klink,ROUTE 9: UNA WAY,2 Common,,,Starter
+#600,Klang,ROUTE 9: UNA WAY,2 Common,,,Starter
+#601,Klinklang,ROUTE 9: UNA WAY,2 Common,,,Starter
+#602,Tynamo,ROUTE 3: PROCELLA STRAITS,1 Very Common,Fishing,,Starter
+#603,Eelektrik,ROUTE 3: PROCELLA STRAITS,1 Very Common,Fishing,,Starter
+#604,Eelektross,ROUTE 3: PROCELLA STRAITS,1 Very Common,Fishing,,Starter
+#605,Elgyem,"ROUTE 7: THE 1,000 STEPS",4 Rare,,,
+#606,Beheeyem,"ROUTE 7: THE 1,000 STEPS",5 Ultra Rare,,,
+#607,Litwick,QUOD VORAGO,2 Common,,,Starter
+#608,Lampent,QUOD VORAGO,2 Common,,,Starter
+#609,Chandelure,QUOD VORAGO,2 Common,,,Starter
+#610,Axew,ROUTE 5: NIVEUS PASS,2 Common,,,Starter
+#611,Fraxure,ROUTE 5: NIVEUS PASS,2 Common,,,Starter
+#612,Haxorus,ROUTE 5: NIVEUS PASS,2 Common,,,Starter
+#613,Cubchoo,ROUTE 5: NIVEUS PASS,2 Common,,,
+#614,Beartic,ROUTE 5: NIVEUS PASS,2 Common,,,
+#615,Cryogonal,"ROUTE 7: THE 1,000 STEPS",3 Uncommon,,,
+#616,Shelmet,ROUTE 1: THE MILIA,4 Rare,,,
+#617,Accelgor,ROUTE 1: THE MILIA,4 Rare,,,
+#618,Stunfisk,ROUTE 1: THE MILIA,3 Uncommon,,,
+#619,Mienfoo,PISCARI TOWN,4 Rare,,QUOD VORAGO,
+#619,Mienfoo,QUOD VORAGO,4 Rare,,PISCARI TOWN,
+#620,Mienshao,PISCARI TOWN,4 Rare,,QUOD VORAGO,
+#620,Mienshao,QUOD VORAGO,4 Rare,,PISCARI TOWN,
+#621,Druddigon,THE DELUGE,2 Common,,,
+#622,Golett,ROUTE 6: THE BENDS,3 Uncommon,,,
+#623,Golurk,ROUTE 6: THE BENDS,3 Uncommon,,,
+#624,Pawniard,ROUTE 8: ADURO PASS,4 Rare,,UBERRIME CITY,
+#624,Pawniard,UBERRIME CITY,3 Uncommon,,ROUTE 8: ADURO PASS,
+#625,Bisharp,ROUTE 8: ADURO PASS,4 Rare,,UBERRIME CITY,
+#625,Bisharp,UBERRIME CITY,3 Uncommon,,ROUTE 8: ADURO PASS,
+#626,Bouffalant,AGRI TOWN,4 Rare,,PAULO ABBAS AND PAULO MATRIS,
+#626,Bouffalant,PAULO ABBAS AND PAULO MATRIS,5 Ultra Rare,,AGRI TOWN,
+#627,Rufflet,ODONTON CITY,3 Uncommon,,,
+#628,Braviary,ODONTON CITY,3 Uncommon,,,
+#629,Vullaby,MT ADURO,2 Common,,,
+#630,Mandibuzz,MT ADURO,2 Common,,,
+#631,Heatmor,MT ADURO,3 Uncommon,,,
+#632,Durant,ROUTE 3: PROCELLA STRAITS,3 Uncommon,,,
+#633,Deino,ROUTE 8: ADURO PASS,4 Rare [RARE],,,Starter
+#634,Zweilous,ROUTE 8: ADURO PASS,4 Rare [RARE],,,Starter
+#635,Hydreigon,ROUTE 8: ADURO PASS,4 Rare [RARE],,,Starter
+#636,Larvesta,MT ADURO,5 Ultra Rare [RARE],,,
+#637,Volcarona,MT ADURO,5 Ultra Rare [RARE],,,
+#638,Cobalion,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#639,Terrakion,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#640,Virizion,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#641,Tornadus (Therian),CAECUS TOWN,6 Fateful Encounter [RARE] [LEGENDARY],,CAMPANA TOWN,
+#641,Tornadus (Therian),CAMPANA TOWN,6 Fateful Encounter [RARE] [LEGENDARY],,CAECUS TOWN,
+#641,Tornadus (Incarnate),LAKE DUO DULCIS,6 Fateful Encounter [RARE] [LEGENDARY],,Route 4: Quod Galea,
+#641,Tornadus (Incarnate),ROUTE 4: QUOD GALEA,6 Fateful Encounter [RARE] [LEGENDARY],,Lake Duo Dulcis,
+#642,Thundurus (Therian),PROCELLA PRAIRIE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#642,Thundurus (Incarnate),ROUTE 3: PROCELLA STRAITS,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#643,Reshiram,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#644,Zekrom,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#645,Landorus (Therian),AGRI TOWN,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#645,Landorus (Incarnate),ROUTE 6: THE BENDS,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#646,Kyurem,THE TUNDRA,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#647,Keldeo,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#648,Meloetta,CAECUS TOWN,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#649,Genesect,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#650,Chespin,PAULO ABBAS AND PAULO MATRIS,4 Rare [RARE],,,Starter
+#651,Quilladin,PAULO ABBAS AND PAULO MATRIS,4 Rare [RARE],,,Starter
+#652,Chesnaught,PAULO ABBAS AND PAULO MATRIS,4 Rare [RARE],,,Starter
+#653,Fennekin,VETUS ISLE,4 Rare [RARE],,,Starter
+#654,Braixen,VETUS ISLE,4 Rare [RARE],,,Starter
+#655,Delphox,VETUS ISLE,4 Rare [RARE],,,Starter
+#656,Froakie,LAKE DUO DULCIS,4 Rare [RARE],,,Starter
+#657,Frogadier,LAKE DUO DULCIS,4 Rare [RARE],,,Starter
+#658,Greninja,LAKE DUO DULCIS,4 Rare [RARE],,,Starter
+#659,Bunnelby,ROUTE 4: QUOD GALEA,3 Uncommon,,,
+#660,Diggersby,ROUTE 4: QUOD GALEA,3 Uncommon,,,
+#661,Fletchling,CAMPANA TOWN,1 Very Common,,,Starter
+#662,Fletchinder,CAMPANA TOWN,1 Very Common,,,Starter
+#663,Talonflame,CAMPANA TOWN,1 Very Common,,,Starter
+#664,Scatterbug,ROUTE 10: LAKE LEBES,2 Common,,,Starter
+#665,Spewpa,ROUTE 10: LAKE LEBES,2 Common,,,Starter
+#666,Vivillon (River),ROUTE 10: LAKE LEBES,2 Common,,,Starter
+#666,Vivillon (Pokeball),ROUTE 9: UNA WAY,4 Rare,,,Starter
+#666,Vivillon (Jungle),STIPES CITY,4 Rare,,,Starter
+#667,Litleo,MT ADURO,2 Common,,"ROUTE 4: QUOD GALEA, ROUTE 8: ADURO PASS",
+#667,Litleo,ROUTE 4: QUOD GALEA,5 Ultra Rare,,"ROUTE 8: ADURO PASS, MT ADURO",
+#667,Litleo,ROUTE 8: ADURO PASS,4 Rare,,"ROUTE 4: QUOD GALEA, MT ADURO",
+#668,Pyroar,MT ADURO,3 Uncommon,,"ROUTE 4: QUOD GALEA, ROUTE 8: ADURO PASS",
+#668,Pyroar,ROUTE 4: QUOD GALEA,5 Ultra Rare,,"ROUTE 8: ADURO PASS, MT ADURO",
+#668,Pyroar,ROUTE 8: ADURO PASS,4 Rare,,"ROUTE 4: QUOD GALEA, MT ADURO",
+#669,Flabébé,CAECUS TOWN,1 Very Common,,MITIS COVE,Starter
+#669,Flabébé,MITIS COVE,1 Very Common,,CAECUS TOWN,Starter
+#670,Floette,CAECUS TOWN,2 Common,,MITIS COVE,Starter
+#670,Floette,MITIS COVE,1 Very Common,,CAECUS TOWN,Starter
+#671,Florges,CAECUS TOWN,3 Uncommon,,MITIS COVE,Starter
+#671,Florges,MITIS COVE,1 Very Common,,CAECUS TOWN,Starter
+#672,Skiddo,CAMPANA TOWN,2 Common,,Route 4: Quod Galea,
+#672,Skiddo,ROUTE 4: QUOD GALEA,3 Uncommon,,CAMPANA TOWN,
+#673,Gogoat,CAMPANA TOWN,2 Common,,Route 4: Quod Galea,
+#673,Gogoat,ROUTE 4: QUOD GALEA,3 Uncommon,,CAMPANA TOWN,
+#674,Pancham,MT ADURO,4 Rare,,,
+#675,Pangoro,MT ADURO,5 Ultra Rare,,,
+#676,Furfrou,CAECUS TOWN,4 Rare,,,
+#677,Espurr,CAECUS TOWN,4 Rare,,VETUS ISLE,
+#677,Meowstic,CAECUS TOWN,5 Ultra Rare,,VETUS ISLE,
+#677,Espurr,VETUS ISLE,4 Rare,,CAECUS TOWN,
+#678,Meowstic,VETUS ISLE,5 Ultra Rare,,CAECUS TOWN,
+#679,Honedge,ROUTE 3: PROCELLA STRAITS,4 Rare,,,Starter
+#680,Doublade,ROUTE 3: PROCELLA STRAITS,4 Rare,,,Starter
+#681,Aegislash,ROUTE 3: PROCELLA STRAITS,4 Rare,,,Starter
+#682,Spritzee,MITIS COVE,1 Very Common,,ROUTE 9: UNA WAY,
+#682,Spritzee,ROUTE 9: UNA WAY,2 Common,,MITIS COVE,
+#683,Aromatisse,MITIS COVE,1 Very Common,,ROUTE 9: UNA WAY,
+#683,Aromatisse,ROUTE 9: UNA WAY,2 Common,,MITIS COVE,
+#684,Swirlix,ROUTE 9: UNA WAY,3 Uncommon,,,
+#685,Slurpuff,ROUTE 9: UNA WAY,3 Uncommon,,,
+#686,Inkay,HUDOR REEF,3 Uncommon,,,
+#687,Malamar,HUDOR REEF,4 Rare,,,
+#688,Binacle,THE DELUGE,3 Uncommon,,,
+#689,Barbaracle,THE DELUGE,3 Uncommon,,,
+#690,Skrelp,ROUTE 1: THE MILIA,2 Common,,,
+#691,Dragalge,ROUTE 1: THE MILIA,2 Common,,,
+#692,Clauncher,ROUTE 1: THE MILIA,4 Rare,,,
+#693,Clawitzer,ROUTE 1: THE MILIA,4 Rare,,,
+#694,Helioptile,UBERRIME CITY,2 Common,,,
+#695,Heliolisk,UBERRIME CITY,2 Common,,,
+#696,Tyrunt,????,[RARE] [FOSSIL],,,
+#697,Tyrantrum,????,[RARE] [FOSSIL],,,
+#698,Amaura,????,[RARE] [FOSSIL],,,
+#699,Aurorus,????,[RARE] [FOSSIL],,,
+#700,Sylveon,MITIS COVE,5 Ultra Rare [RARE],,,
+#701,Hawlucha,PISCARI TOWN,1 Very Common,,,
+#702,Dedenne,ROUTE 9: UNA WAY,3 Uncommon,,,
+#703,Carbink,MITIS COVE,3 Uncommon,,,
+#704,Goomy,THE DELUGE,4 Rare [RARE],,,Starter
+#705,Sliggoo,THE DELUGE,4 Rare [RARE],,,Starter
+#706,Goodra,THE DELUGE,4 Rare [RARE],,,Starter
+#707,Klefki,ROUTE 9: UNA WAY,3 Uncommon,,,
+#708,Phantump,ROUTE 10: LAKE LEBES,1 Very Common,,STIPES CITY,
+#708,Phantump,STIPES CITY,3 Uncommon,,Route 10: Lake Lebes,
+#709,Trevenant,ROUTE 10: LAKE LEBES,1 Very Common,,STIPES CITY,
+#709,Trevenant,STIPES CITY,3 Uncommon,,Route 10: Lake Lebes,
+#710,Pumpkaboo,STIPES CITY,2 Common,,,
+#711,Gourgeist,STIPES CITY,2 Common,,,
+#712,Bergmite,"ROUTE 7: THE 1,000 STEPS",1 Very Common,,,
+#713,Avalugg,"ROUTE 7: THE 1,000 STEPS",1 Very Common,,,
+#714,Noibat,THE DELUGE,2 Common,,,
+#715,Noivern,THE DELUGE,2 Common,,,
+#716,Xerneas,MITIS COVE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#717,Yveltal,MT ADURO,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#718,Zygarde,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#719,Diancie,"ROUTE 7: THE 1,000 STEPS",6 Fateful Encounter [RARE] [LEGENDARY],,,
+#720,Hoopa,VETUS ISLE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#721,Volcanion,ROUTE 8: ADURO PASS,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#722,Rowlet,STIPES CITY,4 Rare [RARE],,,Starter
+#723,Dartrix,STIPES CITY,4 Rare [RARE],,,Starter
+#724,Decidueye,STIPES CITY,4 Rare [RARE],,,Starter
+#725,Litten,ROUTE 8: ADURO PASS,4 Rare [RARE],,,Starter
+#726,Torracat,ROUTE 8: ADURO PASS,4 Rare [RARE],,,Starter
+#727,Incineroar,ROUTE 8: ADURO PASS,4 Rare [RARE],,,Starter
+#728,Popplio,HUDOR REEF,4 Rare [RARE],,,Starter
+#729,Brionne,HUDOR REEF,4 Rare [RARE],,,Starter
+#730,Primarina,HUDOR REEF,5 Ultra Rare [RARE],,,Starter
+#731,Pikipek,ROUTE 4: QUOD GALEA,1 Very Common,,,Starter
+#732,Trumbeak,ROUTE 4: QUOD GALEA,1 Very Common,,,Starter
+#733,Toucannon,ROUTE 4: QUOD GALEA,1 Very Common,,,Starter
+#734,Yungoos,ROUTE 4: QUOD GALEA,2 Common,,,
+#735,Gumshoos,ROUTE 4: QUOD GALEA,2 Common,,,
+#736,Grubbin,PISCARI TOWN,4 Rare,,,Starter
+#737,Charjabug,PISCARI TOWN,4 Rare,,,Starter
+#738,Vikavolt,PISCARI TOWN,4 Rare,,,Starter
+#739,Crabrawler,ROUTE 1: THE MILIA,3 Uncommon,,,
+#740,Crabominable,ROUTE 1: THE MILIA,4 Rare,,,
+#741,Oricorio (Sensu Style),ROUTE 10: LAKE LEBES,4 Rare,,,
+#741,Oricorio (Pom-Pom Style),ROUTE 3: PROCELLA STRAITS,3 Uncommon,,,
+#741,Oricorio (Baile Style),ROUTE 8: ADURO PASS,4 Rare,,,
+#741,Oricorio (Pa'u Style),STIPES CITY,4 RARE,,,
+#742,Cutiefly,CAECUS TOWN,4 Rare,,,
+#743,Ribombee,CAECUS TOWN,4 Rare,,,
+#744,Rockruff,ROUTE 6: THE BENDS,2 Common,,,
+#745,Lycanroc,ROUTE 6: THE BENDS,2 Common,,,
+#746,Wishiwashi,ROUTE 1: THE MILIA,3 Uncommon,,,
+#747,Mareanie,ROUTE 2: CORSOLA COVE,3 Uncommon,,,
+#748,Toxapex,ROUTE 2: CORSOLA COVE,4 Rare,,,
+#749,Mudbray,AGRI TOWN,2 Common,,,
+#750,Mudsdale,AGRI TOWN,3 Uncommon,,,
+#751,Dewpider,ROUTE 10: LAKE LEBES,3 Uncommon,,,
+#752,Araquanid,ROUTE 10: LAKE LEBES,3 Uncommon,,,
+#753,Fomantis,ROUTE 4: QUOD GALEA,4 Rare,,,
+#754,Lurantis,ROUTE 4: QUOD GALEA,4 Rare,,,
+#755,Morelull,MITIS COVE,4 Rare,,,
+#756,Shiinotic,MITIS COVE,4 Rare,,,
+#757,Salandit,ROUTE 8: ADURO PASS,2 Common,,,
+#758,Salazzle,ROUTE 8: ADURO PASS,2 Common,,,
+#759,Stufful,PISCARI TOWN,4 Rare,,,
+#760,Bewear,PISCARI TOWN,4 Rare,,,
+#761,Bounsweet,CAECUS TOWN,2 Common,,,Starter
+#762,Steenee,CAECUS TOWN,3 Uncommon,,,Starter
+#763,Tsareena,CAECUS TOWN,4 Rare,,,Starter
+#764,Comfey,MITIS COVE,4 Rare,,,
+#765,Oranguru,VETUS ISLE,4 Rare,,,
+#766,Passimian,VETUS ISLE,4 Rare,,,
+#767,Wimpod,CULTELLUS REEFS,3 Uncommon,,,
+#768,Golisopod,CULTELLUS REEFS,3 Uncommon,,,
+#769,Sandygast,ROUTE 1: THE MILIA,2 Common,,,
+#770,Palossand,ROUTE 1: THE MILIA,2 Common,,,
+#771,Pyukumuku,ROUTE 1: THE MILIA,4 Rare,,,
+#772,Type: Null,QUOD VORAGO,5 Ultra Rare [RARE],,,
+#773,Silvally,QUOD VORAGO,5 Ultra Rare [RARE],,,
+#774,Minior,PAULO ABBAS AND PAULO MATRIS,4 Rare,,,
+#775,Komala,VETUS ISLE,4 Rare,,,
+#776,Turtonator,MT ADURO,4 Rare,,,
+#777,Togedemaru,ROUTE 3: PROCELLA STRAITS,1 Very Common,,,
+#778,Mimikyu,MITIS COVE,5 Ultra Rare,,,
+#778,Mimikyu,MITIS COVE,1 Very Common,Pikachu In Party,,
+#779,Bruxish,ROUTE 2: CORSOLA COVE,3 Uncommon,,VETUS ISLE,Fishing
+#779,Bruxish,VETUS ISLE,1 Very Common,Fishing,ROUTE 2: CORSOLA COVE,Fishing
+#780,Drampa,ROUTE 5: NIVEUS PASS,3 Uncommon,,,
+#781,Dhelmise,CULTELLUS REEFS,2 Common,,HUDOR REEF,
+#781,Dhelmise,HUDOR REEF,4 Rare,,CULTELLUS REEFS,
+#782,Jangmo-o,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#783,Hakamo-o,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#784,Kommo-o,ROUTE 5: NIVEUS PASS,4 Rare [RARE],,,Starter
+#785,Tapu Koko,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#786,Tapu Lele,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#787,Tapu Bulu,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#788,Tapu Fini,- ANYWHERE,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#789,Cosmog,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#790,Cosmoem,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#791,Solgaleo,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#792,Lunala,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#793,Nihilego,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#794,Buzzwole,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#795,Pheromosa,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#796,Xurkitree,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#797,Celesteela,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#798,Kartana,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#799,Guzzlord,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#800,Necrozma,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#801,Magearna,ROUTE 5: NIVEUS PASS,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#802,Marshadow,QUOD VORAGO,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#803,Poipole,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#804,Naganadel,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#805,Stakataka,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#806,Blacephalon,????,6 Fateful Encounter [RARE] [LEGENDARY],,,
+#807,Zeraora,UBERRIME CITY,6 Fateful Encounter [RARE] [LEGENDARY],,,
