@@ -144,7 +144,7 @@ r"""
             {nickname} -
             <span style="font-family: Tahoma;font-weight:bold;">{gender}</span>
             <a href="{specie_link}" style="color:#000;">
-                - {specie}
+                - {specie_print}
             </a>
         </th>
     </tr>
@@ -232,9 +232,9 @@ r"""
 
 def genders():
     return [
-        '⚲',
         '♀',
-        '♂'
+        '♂',
+        '⚲'
     ]
 
 def move_types():
@@ -262,8 +262,8 @@ def move_types():
 
 def balls():
     return {
-        'No Ball': '',
         'Pokeball': 'http://pokemonpledge.b1.jcink.com/uploads/pokemonpledge/Shop_Icons/Pokeballs/pokeball.png',
+        'No Ball': '',
         'Cherish Ball': 'http://pokemonpledge.b1.jcink.com/uploads/pokemonpledge/Shop_Icons/Pokeballs/cherishball.png',
         'Dive Ball': 'http://pokemonpledge.b1.jcink.com/uploads/pokemonpledge/Shop_Icons/Pokeballs/diveball.png',
         'Dusk Ball': 'http://pokemonpledge.b1.jcink.com/uploads/pokemonpledge/Shop_Icons/Pokeballs/duskball.png',
@@ -331,6 +331,7 @@ def held_items():
         'Leftovers': 'https://files.jcink.net/uploads/pokemonpledge/Shop_Icons/Held_Items/LeftoversSprite.png',
         'Life Orb': 'https://files.jcink.net/uploads/pokemonpledge/Shop_Icons/Held_Items/Life_Orb_Sprite.png',
         'Light Ball': 'https://files.jcink.net/uploads/pokemonpledge/Shop_Icons/Held_Items/Light_Ball_Sprite.png',
+        'Lucky Egg': 'http://files.jcink.net/uploads/pokemonpledge/Shop_Icons/Unbuyables/lucky_egg.png',
         'Mystic Water': 'http://files.jcink.net/uploads/pokemonpledge/Shop_Icons/Unbuyables/mystic_water.png',
         'Normal Gem': 'http://files.jcink.net/uploads/pokemonpledge/Shop_Icons/Held_Items/normal_gem.png',
         'Poison Gem': 'http://files.jcink.net/uploads/pokemonpledge/Shop_Icons/Held_Items/poison_gem.png',

@@ -42,7 +42,7 @@ def topic_counter(thread_num):
     wpu, ppu = thread.main()
     return users, wpu, ppu
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/tcounts/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
         return render_template('main_page.html')
@@ -149,7 +149,6 @@ def insert_into_table(table, form):
         db.session.add(row)
         db.session.commit()
 
-pcs = [pc_jenny.PCPokemon()]
 balls = pc_jenny_templates.balls()
 held_items = pc_jenny_templates.held_items()
 genders = pc_jenny_templates.genders()
@@ -157,8 +156,9 @@ move_types = pc_jenny_templates.move_types()
 
 @app.route('/pc_jenny1/', methods=['GET', 'POST'])
 def pc_jenny1():
-    pc = pc_jenny.PCPokemon()
-    created_pc = pc_jenny.create_pcs([pc])
+    n=1
+    pc = [pc_jenny.PCPokemon() for i in range(n)]
+    created_pc = pc_jenny.create_pcs(pc)
     if request.method == 'GET':
         return render_template(
             'pc_jenny1.html',
@@ -169,8 +169,8 @@ def pc_jenny1():
             created_pc=created_pc,
             pc=pc
         )
-    pc.parse_args(request.form) 
-    created_pc = pc_jenny.create_pcs([pc])
+    pc = pc_jenny.parse_multiple(pc, request.form)
+    created_pc = pc_jenny.create_pcs(pc)
     return render_template(
         'pc_jenny1.html',
         balls=balls,
@@ -315,4 +315,3 @@ def pc_jenny6():
         created_pc=created_pc,
         pc=pc
     )
-

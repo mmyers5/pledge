@@ -8,9 +8,7 @@ def create_pcs(pcs):
     tables = {}
     for t in range(n_pcs):
         t_name = 'table_{}'.format(t+1)
-        print(pcs[t].__dict__)
         tables[t_name] = pc_table().format(**pcs[t].__dict__)
-        print(tables)
     pc_tables = getattr(pc_jenny_templates, t_name)().format(**tables)
     return '\n'.join([preamble(), pc_tables])
 
@@ -18,12 +16,10 @@ def parse_multiple(pc, form):
     n = len(pc)
     for i in range(n):
         suffix = '_{}'.format(i)
-        i_form = { 
+        i_form = {
             ''.join(i.split(suffix)[:-1]): form[i] for i in form if i.endswith(suffix)
         }
-        print(i_form)
         pc[i].parse_args(i_form)
-        print(pc[i].specie)
     return pc
 
 
@@ -34,6 +30,7 @@ class PCPokemon:
     def set_defaults(self):
         self.pcname_size = '16'
         self.specie = ''
+        self.specie_print = ''
         self.nickname = ''
         self.gender = '⚲',
         self.specie_img = (
@@ -51,7 +48,7 @@ class PCPokemon:
         self.ball_img = (
             'http://pokemonpledge.b1.jcink.com/uploads/pokemonpledge/Shop_Icons/Pokeballs/pokeball.png'
         )
-        self.held_item = 'Lucky Egg'
+        self.held_item = 'No Item'
         self.held_item_img = (
             'http://files.jcink.net/uploads/pokemonpledge/Shop_Icons/Unbuyables/lucky_egg.png'
         )
@@ -59,6 +56,10 @@ class PCPokemon:
         self.move2 = ''
         self.move3 = ''
         self.move4 = ''
+        self.move1_type = 'Type'
+        self.move2_type = 'Type'
+        self.move3_type = 'Type'
+        self.move4_type = 'Type'
         self.move1_link = 'https://bulbapedia.bulbagarden.net/wiki/_(move)'
         self.move2_link = 'https://bulbapedia.bulbagarden.net/wiki/_(move)'
         self.move3_link = 'https://bulbapedia.bulbagarden.net/wiki/_(move)'
@@ -79,22 +80,23 @@ class PCPokemon:
         self.type_print = ''
 
     def set_specie(self, specie):
-        self.specie = specie.strip('-f').strip('-m').capitalize()
+        self.specie = specie
+        self.specie_print = re.sub('-\w+', '', specie).capitalize()
         self.specie_link = (
             'https://bulbapedia.bulbagarden.net/wiki/{}_(Pok%C3%A9mon)'.format(
-                self.specie
+                re.sub(' ', '_', self.specie_print)
             )
         )
         if self.shiny == "True":
             self.specie_img = (
                 'https://play.pokemonshowdown.com/sprites/xyani-shiny/{}.gif'.format(
-                    specie.lower()
+                    self.specie.lower()
                 )
             )
-        elif self.shiny == "False":
+        else:
             self.specie_img = (
                 'https://play.pokemonshowdown.com/sprites/xyani/{}.gif'.format(
-                    specie.lower()
+                    self.specie.lower()
                 )
             )
 
@@ -110,10 +112,10 @@ class PCPokemon:
         if type=='':
             return
         if '/' in type:
-            types = [':{}:'.format(i) for i in type.lower().strip().split('/')]
+            types = [' :{}: '.format(i) for i in type.lower().strip().split('/')]
             type_print = ' / '.join(types)
         else:
-            type_print = ':{}:'.format(type.lower().strip())
+            type_print = ' :{}: '.format(type.lower().strip())
         self.type = type
         self.type_print = type_print
 
@@ -121,17 +123,17 @@ class PCPokemon:
         self.ability = ability
         self.ability_link = (
             'https://bulbapedia.bulbagarden.net/wiki/{}_(Ability)'.format(
-                ability.title()
+                re.sub(' ', '_', ability.title())
             )
         )
 
     def set_move(self, move_entry, move, move_type):
         setattr(self, move_entry, move)
         setattr(
-            self, 
-            '{}_link'.format(move_entry), 
+            self,
+            '{}_link'.format(move_entry),
             'https://bulbapedia.bulbagarden.net/wiki/{}_(move)'.format(
-                move.title()
+                re.sub(' ', '_', move.title())
             )
         )
         setattr(
@@ -162,6 +164,8 @@ class PCPokemon:
                     changes.append(i)
         if 'shiny' in changes:
             self.shiny = form['shiny']
+        else:
+            self.shiny = "False"
         if 'gender' in changes:
             self.gender = form['gender']
         if 'ball' in changes:
@@ -204,4 +208,4 @@ class PCPokemon:
         else:
             self.no_ball = ''
 
-        self.type = re.sub(':+', ':', self.type) 
+        self.type = re.sub(':+', ':', self.type)
