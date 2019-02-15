@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <title>Pokémon PC Generator</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">My scratchpad</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <form action="." method="POST">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="specie_0", placeholder="Specie" value="{{ pc[0].specie }}">
+                                <select name="gender_0">
+                                    {% for gender in genders %}
+                                        {% if gender == pc[0].gender %}
+                                            <option values="{{ gender }}" selected>{{ gender }}</option>
+                                        {% else %}
+                                            <option values="{{ gender }}">{{ gender }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_0", placeholder="Nickname" value="{{ pc[0].nickname }}"><br>
+                                <input type="text" name="pcname_size_0" placeholder="Font Size">
+                                {% if pc[0].shiny == "True" %}
+                                    <input type="checkbox" name="shiny_0" value="True" checked>Shiny<br>
+                                {% else %}
+                                    <input type="checkbox" name="shiny_0" value="True">Shiny<br>
+                                {% endif %}
+                                <select name="ball_0">
+                                    {% for ball in balls %}
+                                        {% if ball == pc[0].ball %}
+                                            <option value="{{ ball }}" selected>{{ ball }}</option>
+                                        {% else %}
+                                            <option value="{{ ball }}">{{ ball }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_0">
+                                    {% for held_item in held_items %}
+                                        {% if held_item == pc[0].held_item %}
+                                            <option value="{{ held_item }}" selected>{{ held_item }}</option>
+                                        {% else %}
+                                            <option value="{{ held_item }}">{{ held_item }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_0", placeholder="Type1/Type2" value="{{ pc[0].type }}"><br>
+                                <input type="text" name="level_0", placeholder="Level" value="{{ pc[0].level }}"><br>
+                                <input type="text" name="link_0", placeholder="Link" value="{{ pc[0].link }}"><br>
+                                <input type="text" name="ability_0", placeholder="Ability" value="{{ pc[0].ability }}"><br>
+                                <input type="text" name="move1_0", placeholder="Move 1" value="{{ pc[0].move1 }}">
+                                <select name="move1_type_0">
+                                    {% for move_type in move_types %}
+                                        {% if move_type == pc[0].move1_type %}
+                                            <option value="{{ move_type }}" selected>{{ move_type }}</option>
+                                        {% else %}
+                                            <option value="{{ move_type }}">{{ move_type }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_0", placeholder="Move 2" value="{{ pc[0].move2 }}">
+                                <select name="move2_type_0">
+                                    {% for move_type in move_types %}
+                                        {% if move_type == pc[0].move2_type %}
+                                            <option value="{{ move_type }}" selected>{{ move_type }}</option>
+                                        {% else %}
+                                            <option value="{{ move_type }}">{{ move_type }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_0", placeholder="Move 3" value="{{ pc[0].move3 }}">
+                                <select name="move3_type_0">
+                                    {% for move_type in move_types %}
+                                        {% if move_type == pc[0].move3_type %}
+                                            <option value="{{ move_type }}" selected>{{ move_type }}</option>
+                                        {% else %}
+                                            <option value="{{ move_type }}">{{ move_type }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_0", placeholder="Move 4" value="{{ pc[0].move4 }}">
+                                <select name="move4_type_0">
+                                    {% for move_type in move_types %}
+                                        {% if move_type == pc[0].move4_type %}
+                                            <option value="{{ move_type }}" selected>{{ move_type }}</option>
+                                        {% else %}
+                                            <option value="{{ move_type }}">{{ move_type }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_0" placeholder="Description" value="{{ pc[0].description }}">{{ pc[0].description }}</textarea>
+                            </td>
+                            <td>
+                                <input type="text" name="specie_1", placeholder="Specie" value="{{ pc[1].specie }}">
+                                <select name="gender_1">
+                                    {% for gender in genders %}
+                                        {% if gender == pc[1].gender %}
+                                            <option values="{{ gender }}" selected>{{ gender }}</option>
+                                        {% else %}
+                                            <option values="{{ gender }}">{{ gender }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="nickname_1", placeholder="Nickname" value="{{ pc[1].nickname }}"><br>
+                                <input type="text" name="pcname_size_1" placeholder="Font Size">
+                                {% if pc[1].shiny == "True" %}
+                                    <input type="checkbox" name="shiny_1" value="True" checked>Shiny<br>
+                                {% else %}
+                                    <input type="checkbox" name="shiny_1" value="True">Shiny<br>
+                                {% endif %}
+                                <select name="ball_1">
+                                    {% for ball in balls %}
+                                        {% if ball == pc[1].ball %}
+                                            <option value="{{ ball }}" selected>{{ ball }}</option>
+                                        {% else %}
+                                            <option value="{{ ball }}">{{ ball }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                <select name="held_item_1">
+                                    {% for held_item in held_items %}
+                                        {% if held_item == pc[1].held_item %}
+                                            <option value="{{ held_item }}" selected>{{ held_item }}</option>
+                                        {% else %}
+                                            <option value="{{ held_item }}">{{ held_item }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="type_1", placeholder="Type1/Type2" value="{{ pc[1].type }}"><br>
+                                <input type="text" name="level_1", placeholder="Level" value="{{ pc[1].level }}"><br>
+                                <input type="text" name="link_1", placeholder="Link" value="{{ pc[1].link }}"><br>
+                                <input type="text" name="ability_1", placeholder="Ability" value="{{ pc[1].ability }}"><br>
+                                <input type="text" name="move1_1", placeholder="Move 1" value="{{ pc[1].move1 }}">
+                                <select name="move1_type_1">
+                                    {% for move_type in move_types %}
+                                        {% if move_type == pc[1].move1_type %}
+                                            <option value="{{ move_type }}" selected>{{ move_type }}</option>
+                                        {% else %}
+                                            <option value="{{ move_type }}">{{ move_type }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move2_1", placeholder="Move 2" value="{{ pc[1].move2 }}">
+                                <select name="move2_type_1">
+                                    {% for move_type in move_types %}
+                                        {% if move_type == pc[1].move2_type %}
+                                            <option value="{{ move_type }}" selected>{{ move_type }}</option>
+                                        {% else %}
+                                            <option value="{{ move_type }}">{{ move_type }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select><br>
+                                <input type="text" name="move3_1", placeholder="Move 3" value="{{ pc[1].move3 }}">
+                                <select name="move3_type_1">
+                                    {% for move_type in move_types %}
+                                        {% if move_type == pc[1].move3_type %}
+                                            <option value="{{ move_type }}" selected>{{ move_type }}</option>
+                                        {% else %}
+                                            <option value="{{ move_type }}">{{ move_type }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                                <input type="text" name="move4_1", placeholder="Move 4" value="{{ pc[1].move4 }}">
+                                <select name="move4_type_1">
+                                    {% for move_type in move_types %}
+                                        {% if move_type == pc[1].move4_type %}
+                                            <option value="{{ move_type }}" selected>{{ move_type }}</option>
+                                        {% else %}
+                                            <option value="{{ move_type }}">{{ move_type }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select><br>
+                                <textarea class="form-control" name="description_1" placeholder="Description" value="{{ pc[1].description }}">{{ pc[1].description }}</textarea>
+                            </td>
+                        </tr>
+                    </table><br>
+                    <input type="submit" class="btn btn-success" value="Submit"><br>
+                </form>
+            </div>
+            <div class="row">
+                {{ created_pc | safe }}
+            </div>
+            <div class="row" style="padding:5px;">
+                <button id="button">Copy</button>
+            </div>
+            <div class="row" style="overflow:auto;height:150px;line-height:3em;padding:5px;">
+                <pre id="pc_code">
+                    {{ created_pc }}
+                </pre>
+            </div>
+        </div><!-- /.container -->
+        <script>
+            function copyFunction() {
+                const copyText = document.getElementById("pc_code").textContent;
+                const textArea = document.createElement('textarea');
+
+                textArea.style.position = 'fixed';
+                textArea.style.top = 0;
+                textArea.style.left = 0;
+                textArea.style.width = '2em';
+                textArea.style.height = '2em';
+                textArea.style.padding = 0;
+                textArea.style.border = 'none';
+                textArea.style.outline = 'none';
+                textArea.style.boxShadow = 'none';
+                textArea.style.background = 'transparent';
+                textArea.value = copyText;
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textArea);
+            }
+            document.getElementById('button').addEventListener('click', copyFunction);
+        </script>
+    </body>
+</html>
